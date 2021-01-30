@@ -1,63 +1,295 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots ClassView/Class Cleric 1`] = `
-Array [
-  <img
-    alt="Cleric"
-    height={50}
+<div
+  className="css-mv6p84"
+>
+  <input
+    alt="Cleric class info"
+    className="css-da2bp6"
+    onClick={[Function]}
     src="/icons/Class Icon - Cleric.svg"
-    width={50}
-  />,
-  <h1>
-    Cleric
-  </h1>,
-  <h2>
-    Spells:
-  </h2>,
-  <p>
-    Guidance, Light, Mending, Resistance, Sacred Flame, Spare the Dying, Thaumaturgy, Animal Friendship, Bane, Bless, Command, Create or Destroy Water, Cure Wounds, Detect Evil and Good, Detect Magic, Detect Poison and Disease, Guiding Bolt, Healing Word, Inflict Wounds, Protection from Evil and Good, Purify Food and Drink, Sanctuary, Shield of Faith, Aid, Augury, Blindness/Deafness, Calm Emotions, Continual Flame, Enhance Ability, Find Traps, Gentle Repose, Hold Person, Lesser Restoration, Locate Object, Prayer of Healing, Protection from Poison, Silence, Spiritual Weapon, Warding Bond, Zone of Truth, Animate Dead, Beacon of Hope, Bestow Curse, Clairvoyance, Create Food and Water, Daylight, Dispel Magic, Glyph of Warding, Magic Circle, Mass Healing Word, Meld into Stone, Protection from Energy, Remove Curse, Revivify, Sending, Speak with Dead, Spirit Guardians, Tongues, Water Walk, Arcane Eye, Banishment, Control Water, Death Ward, Freedom of Movement, Guardian of Faith, Locate Creature, Stone Shape, Commune, Contagion, Dispel Evil and Good, Flame Strike, Geas, Greater Restoration, Hallow, Insect Plague, Legend Lore, Mass Cure Wounds, Planar Binding, Raise Dead, Scrying, Blade Barrier, Create Undead, Find the Path, Forbiddance, Harm, Heal, Heroes' Feast, Planar Ally, True Seeing, Word of Recall, Conjure Celestial, Divine Word, Etherealness, Fire Storm, Plane Shift, Regenerate, Resurrection, Symbol, Antimagic Field, Control Weather, Earthquake, Holy Aura, Astral Projection, Gate, Mass Heal, True Resurrection
-  </p>,
-  <h2>
-    Subclasses
-  </h2>,
-  <h3>
-    Life
-  </h3>,
-  <h4>
-    Spells: 
-  </h4>,
-  <p>
-    Bless, Cure Wounds, Lesser Restoration, Spiritual Weapon, Beacon of Hope, Revivify, Death Ward, Mass Cure Wounds, Raise Dead
-  </p>,
-]
+    tabIndex={0}
+    type="image"
+  />
+  <button
+    className="css-17sp6g8"
+    onClick={[Function]}
+    tabIndex={-1}
+  >
+    <svg
+      aria-label="pin info pane"
+      enableBackground="new 0 0 512 512"
+      height={30}
+      role="img"
+      viewBox="0 0 512 512"
+      width={30}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        pin info pane
+      </title>
+      <g>
+        <path
+          d="M 330.274 1.4140000000000001 L 320.374 11.314 C 308.019 23.624 301.04 39.112 299.218 55.235 C 297.395 71.356 300.768 87.806 309.475 102.075 L 309.971 102.888 L 201.191 176.388 L 198.752 173.949 C 178.458 153.593 151.923 143.538 125.213 143.537 C 98.503 143.537 71.968 153.593 51.674 173.949 L 41.774 183.848 L 175.063 317.137 L 1.4140000000000001 490.787 L 21.213 510.586 L 194.862 336.936 L 328.152 470.226 L 338.052 460.326 C 358.408 440.032 368.464 413.497 368.464 386.787 C 368.464 360.076 358.408 333.542 338.052 313.248 L 335.613 310.809 L 409.113 202.029 L 409.926 202.525 C 424.195 211.233 440.645 214.605 456.766 212.783 C 472.889 210.961 488.377 203.981 500.687 191.626 L 510.586 181.727 L 330.274 1.4140000000000001 Z"
+          fill="black"
+        />
+        <path
+          d="M 340.174 96.167 C 333.164 89.118 328.814 80.226 327.326 71.099 C 325.837 61.971 327.161 52.325 331.189 43.814 L 331.795 42.533 L 469.468 180.206 L 468.187 180.812 C 459.676 184.84 450.03 186.164 440.902 184.675 C 431.775 183.187 422.883 178.837 415.834 171.827 L 340.174 96.167 Z"
+          fill="white"
+        />
+        <path
+          d="M 221.358 196.554 L 328.542 124.133 L 387.867 183.458 L 315.446 290.642 L 221.358 196.554 Z"
+          fill="white"
+        />
+        <path
+          d="M 82.278 184.753 L 83.3 184.079 C 98.014 174.385 115.536 170.261 132.453 171.866 C 149.369 173.471 165.996 180.838 178.953 193.747 L 318.253 333.047 C 331.162 346.004 338.529 362.631 340.134 379.547 C 341.739 396.464 337.615 413.986 327.921 428.7 L 327.247 429.722 L 82.278 184.753 Z"
+          fill="white"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    className="css-1vibra5"
+  >
+    <h1>
+      Cleric
+    </h1>
+    <h2>
+      Spells:
+    </h2>
+    <p>
+      Guidance, Light, Mending, Resistance, Sacred Flame, Spare the Dying, Thaumaturgy, Animal Friendship, Bane, Bless, Command, Create or Destroy Water, Cure Wounds, Detect Evil and Good, Detect Magic, Detect Poison and Disease, Guiding Bolt, Healing Word, Inflict Wounds, Protection from Evil and Good, Purify Food and Drink, Sanctuary, Shield of Faith, Aid, Augury, Blindness/Deafness, Calm Emotions, Continual Flame, Enhance Ability, Find Traps, Gentle Repose, Hold Person, Lesser Restoration, Locate Object, Prayer of Healing, Protection from Poison, Silence, Spiritual Weapon, Warding Bond, Zone of Truth, Animate Dead, Beacon of Hope, Bestow Curse, Clairvoyance, Create Food and Water, Daylight, Dispel Magic, Glyph of Warding, Magic Circle, Mass Healing Word, Meld into Stone, Protection from Energy, Remove Curse, Revivify, Sending, Speak with Dead, Spirit Guardians, Tongues, Water Walk, Arcane Eye, Banishment, Control Water, Death Ward, Freedom of Movement, Guardian of Faith, Locate Creature, Stone Shape, Commune, Contagion, Dispel Evil and Good, Flame Strike, Geas, Greater Restoration, Hallow, Insect Plague, Legend Lore, Mass Cure Wounds, Planar Binding, Raise Dead, Scrying, Blade Barrier, Create Undead, Find the Path, Forbiddance, Harm, Heal, Heroes' Feast, Planar Ally, True Seeing, Word of Recall, Conjure Celestial, Divine Word, Etherealness, Fire Storm, Plane Shift, Regenerate, Resurrection, Symbol, Antimagic Field, Control Weather, Earthquake, Holy Aura, Astral Projection, Gate, Mass Heal, True Resurrection
+    </p>
+    <h2>
+      Subclasses
+    </h2>
+    <h3>
+      Life
+    </h3>
+    <h4>
+      Spells: 
+    </h4>
+    <p>
+      Bless, Cure Wounds, Lesser Restoration, Spiritual Weapon, Beacon of Hope, Revivify, Death Ward, Mass Cure Wounds, Raise Dead
+    </p>
+  </div>
+</div>
 `;
 
 exports[`Storyshots ClassView/Class Monk 1`] = `
-Array [
-  <img
-    alt="Monk"
-    height={50}
+<div
+  className="css-mv6p84"
+>
+  <input
+    alt="Monk class info"
+    className="css-da2bp6"
+    onClick={[Function]}
     src="/icons/Class Icon - Monk.svg"
-    width={50}
-  />,
-  <h1>
-    Monk
-  </h1>,
-  <h2>
-    Spells:
-  </h2>,
-  <p />,
-  <h2>
-    Subclasses
-  </h2>,
-  <h3>
-    Open Hand
-  </h3>,
-  <h4>
-    Spells: 
-  </h4>,
-  <p>
-    None
-  </p>,
-]
+    tabIndex={0}
+    type="image"
+  />
+  <button
+    className="css-17sp6g8"
+    onClick={[Function]}
+    tabIndex={-1}
+  >
+    <svg
+      aria-label="pin info pane"
+      enableBackground="new 0 0 512 512"
+      height={30}
+      role="img"
+      viewBox="0 0 512 512"
+      width={30}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        pin info pane
+      </title>
+      <g>
+        <path
+          d="M 330.274 1.4140000000000001 L 320.374 11.314 C 308.019 23.624 301.04 39.112 299.218 55.235 C 297.395 71.356 300.768 87.806 309.475 102.075 L 309.971 102.888 L 201.191 176.388 L 198.752 173.949 C 178.458 153.593 151.923 143.538 125.213 143.537 C 98.503 143.537 71.968 153.593 51.674 173.949 L 41.774 183.848 L 175.063 317.137 L 1.4140000000000001 490.787 L 21.213 510.586 L 194.862 336.936 L 328.152 470.226 L 338.052 460.326 C 358.408 440.032 368.464 413.497 368.464 386.787 C 368.464 360.076 358.408 333.542 338.052 313.248 L 335.613 310.809 L 409.113 202.029 L 409.926 202.525 C 424.195 211.233 440.645 214.605 456.766 212.783 C 472.889 210.961 488.377 203.981 500.687 191.626 L 510.586 181.727 L 330.274 1.4140000000000001 Z"
+          fill="black"
+        />
+        <path
+          d="M 340.174 96.167 C 333.164 89.118 328.814 80.226 327.326 71.099 C 325.837 61.971 327.161 52.325 331.189 43.814 L 331.795 42.533 L 469.468 180.206 L 468.187 180.812 C 459.676 184.84 450.03 186.164 440.902 184.675 C 431.775 183.187 422.883 178.837 415.834 171.827 L 340.174 96.167 Z"
+          fill="white"
+        />
+        <path
+          d="M 221.358 196.554 L 328.542 124.133 L 387.867 183.458 L 315.446 290.642 L 221.358 196.554 Z"
+          fill="white"
+        />
+        <path
+          d="M 82.278 184.753 L 83.3 184.079 C 98.014 174.385 115.536 170.261 132.453 171.866 C 149.369 173.471 165.996 180.838 178.953 193.747 L 318.253 333.047 C 331.162 346.004 338.529 362.631 340.134 379.547 C 341.739 396.464 337.615 413.986 327.921 428.7 L 327.247 429.722 L 82.278 184.753 Z"
+          fill="white"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    className="css-1vibra5"
+  >
+    <h1>
+      Monk
+    </h1>
+    <h2>
+      Spells:
+    </h2>
+    <p>
+      None
+    </p>
+    <h2>
+      Subclasses
+    </h2>
+    <h3>
+      Open Hand
+    </h3>
+    <h4>
+      Spells: 
+    </h4>
+    <p>
+      None
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Icons Artificer Icon 1`] = `
+<input
+  alt="Artificer class info"
+  className="css-10fgt7p"
+  src="/icons/Class Icon - Artificer.svg"
+  tabIndex={0}
+  type="image"
+/>
+`;
+
+exports[`Storyshots Icons Icon Collection 1`] = `
+<div>
+  <input
+    alt="Artificer class info"
+    className="css-10fgt7p"
+    src="/icons/Class Icon - Artificer.svg"
+    tabIndex={0}
+    type="image"
+  />
+  <input
+    alt="Barbarian class info"
+    className="css-10fgt7p"
+    src="/icons/Class Icon - Barbarian.svg"
+    tabIndex={0}
+    type="image"
+  />
+  <input
+    alt="Bard class info"
+    className="css-10fgt7p"
+    src="/icons/Class Icon - Bard.svg"
+    tabIndex={0}
+    type="image"
+  />
+  <input
+    alt="Cleric class info"
+    className="css-10fgt7p"
+    src="/icons/Class Icon - Cleric.svg"
+    tabIndex={0}
+    type="image"
+  />
+  <input
+    alt="Druid class info"
+    className="css-10fgt7p"
+    src="/icons/Class Icon - Druid.svg"
+    tabIndex={0}
+    type="image"
+  />
+  <input
+    alt="Fighter class info"
+    className="css-10fgt7p"
+    src="/icons/Class Icon - Fighter.svg"
+    tabIndex={0}
+    type="image"
+  />
+  <input
+    alt="Monk class info"
+    className="css-10fgt7p"
+    src="/icons/Class Icon - Monk.svg"
+    tabIndex={0}
+    type="image"
+  />
+  <input
+    alt="Paladin class info"
+    className="css-10fgt7p"
+    src="/icons/Class Icon - Paladin.svg"
+    tabIndex={0}
+    type="image"
+  />
+  <input
+    alt="Ranger class info"
+    className="css-10fgt7p"
+    src="/icons/Class Icon - Ranger.svg"
+    tabIndex={0}
+    type="image"
+  />
+  <input
+    alt="Rogue class info"
+    className="css-10fgt7p"
+    src="/icons/Class Icon - Rogue.svg"
+    tabIndex={0}
+    type="image"
+  />
+  <input
+    alt="Sorcerer class info"
+    className="css-10fgt7p"
+    src="/icons/Class Icon - Sorcerer.svg"
+    tabIndex={0}
+    type="image"
+  />
+  <input
+    alt="Warlock class info"
+    className="css-10fgt7p"
+    src="/icons/Class Icon - Warlock.svg"
+    tabIndex={0}
+    type="image"
+  />
+  <input
+    alt="Wizard class info"
+    className="css-10fgt7p"
+    src="/icons/Class Icon - Wizard.svg"
+    tabIndex={0}
+    type="image"
+  />
+</div>
+`;
+
+exports[`Storyshots SVGIcons Pin Icon 1`] = `
+<svg
+  aria-label="A Pin"
+  enableBackground="new 0 0 512 512"
+  height={50}
+  role="img"
+  viewBox="0 0 512 512"
+  width={50}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>
+    A Pin
+  </title>
+  <g>
+    <path
+      d="M 330.274 1.4140000000000001 L 320.374 11.314 C 308.019 23.624 301.04 39.112 299.218 55.235 C 297.395 71.356 300.768 87.806 309.475 102.075 L 309.971 102.888 L 201.191 176.388 L 198.752 173.949 C 178.458 153.593 151.923 143.538 125.213 143.537 C 98.503 143.537 71.968 153.593 51.674 173.949 L 41.774 183.848 L 175.063 317.137 L 1.4140000000000001 490.787 L 21.213 510.586 L 194.862 336.936 L 328.152 470.226 L 338.052 460.326 C 358.408 440.032 368.464 413.497 368.464 386.787 C 368.464 360.076 358.408 333.542 338.052 313.248 L 335.613 310.809 L 409.113 202.029 L 409.926 202.525 C 424.195 211.233 440.645 214.605 456.766 212.783 C 472.889 210.961 488.377 203.981 500.687 191.626 L 510.586 181.727 L 330.274 1.4140000000000001 Z"
+      fill=""
+    />
+    <path
+      d="M 340.174 96.167 C 333.164 89.118 328.814 80.226 327.326 71.099 C 325.837 61.971 327.161 52.325 331.189 43.814 L 331.795 42.533 L 469.468 180.206 L 468.187 180.812 C 459.676 184.84 450.03 186.164 440.902 184.675 C 431.775 183.187 422.883 178.837 415.834 171.827 L 340.174 96.167 Z"
+      fill=""
+    />
+    <path
+      d="M 221.358 196.554 L 328.542 124.133 L 387.867 183.458 L 315.446 290.642 L 221.358 196.554 Z"
+      fill=""
+    />
+    <path
+      d="M 82.278 184.753 L 83.3 184.079 C 98.014 174.385 115.536 170.261 132.453 171.866 C 149.369 173.471 165.996 180.838 178.953 193.747 L 318.253 333.047 C 331.162 346.004 338.529 362.631 340.134 379.547 C 341.739 396.464 337.615 413.986 327.921 428.7 L 327.247 429.722 L 82.278 184.753 Z"
+      fill=""
+    />
+  </g>
+</svg>
 `;

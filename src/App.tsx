@@ -1,27 +1,44 @@
 import React, { useMemo } from 'react';
 import { ClassDisplay, ClassDisplayProps } from './ClassView';
 import { useDndData } from './data';
+import styled from '@emotion/styled';
+
+const ClassContainer = styled.div`
+  display: flex;
+
+  & > * {
+    flex: 1;
+  }
+`;
+
+const AppContainer = styled.div`
+  padding: 3rem;
+`;
 
 const App = () => {
-  const data: any = useDndData();
-  console.log(JSON.stringify(data));
+  const { data, loading }: any = useDndData();
   const classes = useMemo(
     () =>
       data
         ? data.map((theClass: Record<string, any>) => (
-            <li key={theClass.name}>
-              <ClassDisplay {...(theClass as ClassDisplayProps)} />
-            </li>
+            <ClassDisplay
+              key={theClass.name}
+              {...(theClass as ClassDisplayProps)}
+            />
           ))
         : null,
     [data]
   );
 
   return (
-    <div className="App">
-      <h1>Classes</h1>
-      <ul>{classes}</ul>
-    </div>
+    <AppContainer className="App">
+      <h1>Select a class</h1>
+      {loading ? (
+        <div>Loading...</div>
+      ) : (
+        <ClassContainer>{classes}</ClassContainer>
+      )}
+    </AppContainer>
   );
 };
 

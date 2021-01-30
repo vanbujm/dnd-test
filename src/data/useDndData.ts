@@ -19,6 +19,7 @@ const getSpells = async (url: string) => {
 export const useDndData = () => {
   const { data } = useQuery(CLASSES);
   const [formattedData, setFormattedData] = useState(null);
+  const [loadingSpells, setLoadingSpells] = useState(true);
 
   if (data && !formattedData) {
     const { classes, subclasses } = data;
@@ -43,8 +44,9 @@ export const useDndData = () => {
     );
     Promise.all(classPromises).then((classData) => {
       setFormattedData(classData as any);
+      setLoadingSpells(false);
     });
   }
 
-  return formattedData;
+  return { data: formattedData, loading: loadingSpells };
 };

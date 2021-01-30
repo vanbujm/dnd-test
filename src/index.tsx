@@ -4,6 +4,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import { API } from './common';
+import { Global } from '@emotion/react';
+import { globalStyle } from './globalStyles';
 
 const client = new ApolloClient({
   uri: `${API}/graphql`,
@@ -13,6 +15,7 @@ const client = new ApolloClient({
 ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
+      <Global styles={globalStyle} />
       <App />
     </ApolloProvider>
   </React.StrictMode>,
