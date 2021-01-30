@@ -97,6 +97,7 @@ const ClassInfoContainer = styled.div<{
 
   pointer-events: ${({ clicked }) => (clicked ? 'all' : 'none')};
 
+  width: 40vw;
   min-width: 250px;
 `;
 

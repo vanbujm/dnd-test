@@ -3,6 +3,7 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { ClassDisplay, ClassDisplayProps } from './ClassDisplay';
 import { mockFormattedClasses } from '../test-data';
+import styled from '@emotion/styled';
 
 export default {
   title: 'ClassView/Class',
@@ -19,3 +20,18 @@ Cleric.args = mockFormattedClasses[0];
 
 export const Monk = Template.bind({});
 Monk.args = mockFormattedClasses[1];
+
+const ClassContainer = styled.div`
+  display: flex;
+
+  & > * {
+    min-width: 100px;
+  }
+`;
+
+export const Collection = () => (
+  <ClassContainer>
+    <ClassDisplay {...mockFormattedClasses[0]} />
+    <ClassDisplay {...mockFormattedClasses[1]} />
+  </ClassContainer>
+);
