@@ -12,7 +12,7 @@ const ClassContainer = styled.div`
 `;
 
 const AppContainer = styled.div`
-  padding: 3rem;
+  padding: 3rem 10rem;
 `;
 
 const App = () => {
