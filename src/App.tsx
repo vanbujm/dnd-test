@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { gql, useQuery } from '@apollo/client';
 import { API } from './common';
 
@@ -54,7 +54,7 @@ const ClassDisplay: React.FC<ClassInfo> = ({ name, spells, subclasses }) => (
     />
     <h1>{name}</h1>
     <h2>Spells:</h2>
-    <p>{JSON.stringify(spells, null, 2)}</p>
+    <p>{spells ? spells.join(', ') : null}</p>
     <h2>Subclasses</h2>
     {subclasses ? (
       subclasses.map((subClass: Record<string, any>) => (
@@ -88,13 +88,20 @@ const useDndData = () => {
     const classPromises = classes.map(
       async ({ name, spells, subclasses: theSubclasses, ...rest }: any) => {
         const formattedSpells = spells ? await getSpells(spells) : null;
-        if (subclasses.length === 0) return { name, formattedSpells, ...rest };
+        if (subclasses.length === 0) {
+          return { name, spells: formattedSpells, ...rest };
+        }
         const subClassObj = theSubclasses.map(({ name }: Record<string, any>) =>
           subclasses.find(
             ({ name: subClassName }: any) => name === subClassName
           )
         );
-        return { name, formattedSpells, ...rest, subclasses: subClassObj };
+        return {
+          name,
+          spells: formattedSpells,
+          ...rest,
+          subclasses: subClassObj,
+        };
       }
     );
     Promise.all(classPromises).then((classData) => {
