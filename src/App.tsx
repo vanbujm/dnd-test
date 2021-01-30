@@ -1,26 +1,131 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useCallback, useMemo, useState } from 'react';
+import { gql, useQuery } from '@apollo/client';
+import { API } from './common';
 
-function App() {
+const CLASSES = gql`
+  query getClasses {
+    classes {
+      name
+      spells
+      subclasses {
+        name
+      }
+    }
+    subclasses {
+      name
+      spells {
+        spell {
+          name
+        }
+      }
+    }
+  }
+`;
+
+const None: React.FC = () => <p>None</p>;
+
+const Spells: React.FC = () => {
+  console.log('adsfasfd');
+  return <div />;
+};
+
+type ClassInfo = Record<string, any>;
+type SubClassInfo = Record<string, any>;
+
+const SubClassDisplay: React.FC<SubClassInfo> = ({ name, spells }) => (
+  <>
+    <h3>{name}</h3>
+    <h4>Spells: </h4>
+    {spells ? (
+      <p>{spells.map((spell: any) => spell.spell.name).join(', ')}</p>
+    ) : (
+      <None />
+    )}
+  </>
+);
+
+const ClassDisplay: React.FC<ClassInfo> = ({ name, spells, subclasses }) => (
+  <>
+    <img
+      src={`${process.env.PUBLIC_URL}/icons/Class Icon - ${name}.svg`}
+      alt={name}
+      height={50}
+      width={50}
+    />
+    <h1>{name}</h1>
+    <h2>Spells:</h2>
+    <p>{JSON.stringify(spells, null, 2)}</p>
+    <h2>Subclasses</h2>
+    {subclasses ? (
+      subclasses.map((subClass: Record<string, any>) => (
+        <SubClassDisplay key={subClass.name} {...subClass} />
+      ))
+    ) : (
+      <None />
+    )}
+  </>
+);
+
+const getSpells = async (url: string) => {
+  // Default options are marked with *
+  const response = await fetch(`${API}${url}`, {
+    method: 'GET',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  const { results } = await response.json();
+  return results.map(({ name }: Record<string, string>) => name);
+};
+
+const useDndData = () => {
+  const { data } = useQuery(CLASSES);
+  const [formattedData, setFormattedData] = useState(null);
+
+  if (data && !formattedData) {
+    const { classes, subclasses } = data;
+    const classPromises = classes.map(
+      async ({ name, spells, subclasses: theSubclasses, ...rest }: any) => {
+        const formattedSpells = spells ? await getSpells(spells) : null;
+        if (subclasses.length === 0) return { name, formattedSpells, ...rest };
+        const subClassObj = theSubclasses.map(({ name }: Record<string, any>) =>
+          subclasses.find(
+            ({ name: subClassName }: any) => name === subClassName
+          )
+        );
+        return { name, formattedSpells, ...rest, subclasses: subClassObj };
+      }
+    );
+    Promise.all(classPromises).then((classData) => {
+      setFormattedData(classData as any);
+    });
+  }
+
+  return formattedData;
+};
+
+const App = () => {
+  const data: any = useDndData();
+
+  const classes = useMemo(
+    () =>
+      data
+        ? data.map((theClass: Record<string, any>) => (
+            <li key={theClass.name}>
+              <ClassDisplay {...theClass} />
+            </li>
+          ))
+        : null,
+    [data]
+  );
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Classes</h1>
+      <ul>{classes}</ul>
     </div>
   );
-}
+};
 
 export default App;

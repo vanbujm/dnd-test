@@ -1,0 +1,9 @@
+{
+  "schemaPath": "schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "dev": "https://www.dnd5eapi.co/graphql"
+    },
+    "introspect": true
+  }
+}

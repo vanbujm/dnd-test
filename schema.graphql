@@ -1,0 +1,3287 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+}
+
+type AbilityScore {
+    _id: String!
+    desc: [String]
+    full_name: String
+    index: String
+    name: String
+    skills: [AbilityScoreSkills]
+    url: String
+}
+
+type AbilityScoreSkills {
+    index: String
+    name: String
+    url: String
+}
+
+type Class {
+    _id: String!
+    class_levels: String
+    hit_die: Float
+    index: String
+    name: String
+    proficiencies: [AbilityScoreSkills]
+    proficiency_choices: [ClassProficiency_choices]
+    saving_throws: [AbilityScoreSkills]
+    spellcasting: ClassSpellcasting
+    spells: String
+    starting_equipment: String
+    subclasses: [AbilityScoreSkills]
+    url: String
+}
+
+type ClassProficiency_choices {
+    choose: Float
+    from: [AbilityScoreSkills]
+    type: String
+}
+
+type ClassSpellcasting {
+    info: [ClassSpellcastingInfo]
+    level: Float
+    spellcasting_ability: AbilityScoreSkills
+}
+
+type ClassSpellcastingInfo {
+    desc: [String]
+    name: String
+}
+
+type Condition {
+    _id: String!
+    desc: [String]
+    index: String
+    name: String
+    url: String
+}
+
+type DamageType {
+    _id: String!
+    desc: [String]
+    index: String
+    name: String
+    url: String
+}
+
+type Equipment {
+    _id: String!
+    armor_category: String
+    armor_class: EquipmentArmor_class
+    capacity: String
+    category_range: String
+    contents: [EquipmentContents]
+    cost: EquipmentCost
+    damage: EquipmentDamage
+    desc: [String]
+    equipment_category: AbilityScoreSkills
+    gear_category: AbilityScoreSkills
+    index: String
+    name: String
+    properties: [AbilityScoreSkills]
+    quantity: Float
+    range: EquipmentRange
+    special: [String]
+    speed: EquipmentSpeed
+    stealth_disadvantage: Boolean
+    str_minimum: Float
+    throw_range: EquipmentThrow_range
+    tool_category: String
+    two_handed_damage: EquipmentTwo_handed_damage
+    url: String
+    vehicle_category: String
+    weapon_category: String
+    weapon_range: String
+    weight: Float
+}
+
+type EquipmentArmor_class {
+    base: Float
+    dex_bonus: Boolean
+    max_bonus: Float
+}
+
+type EquipmentCategory {
+    _id: String!
+    equipment: [AbilityScoreSkills]
+    index: String
+    name: String
+    url: String
+}
+
+type EquipmentContents {
+    item: AbilityScoreSkills
+    quantity: Float
+}
+
+type EquipmentCost {
+    quantity: Float
+    unit: String
+}
+
+type EquipmentDamage {
+    damage_dice: String
+    damage_type: AbilityScoreSkills
+}
+
+type EquipmentRange {
+    long: Float
+    normal: Float
+}
+
+type EquipmentSpeed {
+    quantity: Float
+    unit: String
+}
+
+type EquipmentThrow_range {
+    long: Float
+    normal: Float
+}
+
+type EquipmentTwo_handed_damage {
+    damage_dice: String
+    damage_type: AbilityScoreSkills
+}
+
+type Feature {
+    _id: String!
+    choice: FeatureChoice
+    class: AbilityScoreSkills
+    desc: [String]
+    group: String
+    index: String
+    level: Float
+    name: String
+    prerequisites: [FeaturePrerequisites]
+    reference: String
+    subclass: AbilityScoreSkills
+    url: String
+}
+
+type FeatureChoice {
+    choose: Float
+    from: [AbilityScoreSkills]
+    type: String
+}
+
+type FeaturePrerequisites {
+    level: Float
+    type: String
+}
+
+type Language {
+    _id: String!
+    desc: String
+    index: String
+    name: String
+    script: String
+    type: String
+    typical_speakers: [String]
+    url: String
+}
+
+type Level {
+    _id: String!
+    ability_score_bonuses: Float
+    class: AbilityScoreSkills
+    class_specific: LevelClass_specific
+    feature_choices: [AbilityScoreSkills]
+    features: [AbilityScoreSkills]
+    index: String
+    level: Float
+    prof_bonus: Float
+    spellcasting: LevelSpellcasting
+    subclass: AbilityScoreSkills
+    subclass_specific: LevelSubclass_specific
+    url: String
+}
+
+type LevelClass_specific {
+    action_surges: Float
+    arcane_recovery_levels: Float
+    aura_range: Float
+    bardic_inspiration_die: Float
+    brutal_critical_dice: Float
+    channel_divinity_charges: Float
+    creating_spell_slots: [LevelClass_specificCreating_spell_slots]
+    destroy_undead_cr: Float
+    extra_attacks: Float
+    favored_enemies: Float
+    favored_terrain: Float
+    indomitable_uses: Float
+    invocations_known: Float
+    ki_points: Float
+    magical_secrets_max_5: Float
+    magical_secrets_max_7: Float
+    magical_secrets_max_9: Float
+    martial_arts: LevelClass_specificMartial_arts
+    metamagic_known: Float
+    mystic_arcanum_level_6: Float
+    mystic_arcanum_level_7: Float
+    mystic_arcanum_level_8: Float
+    mystic_arcanum_level_9: Float
+    rage_count: Float
+    rage_damage_bonus: Float
+    sneak_attack: LevelClass_specificSneak_attack
+    song_of_rest_die: Float
+    sorcery_points: Float
+    unarmored_movement: Float
+    wild_shape_fly: Boolean
+    wild_shape_max_cr: Float
+    wild_shape_swim: Boolean
+}
+
+type LevelClass_specificCreating_spell_slots {
+    sorcery_point_cost: Float
+    spell_slot_level: Float
+}
+
+type LevelClass_specificMartial_arts {
+    dice_count: Float
+    dice_value: Float
+}
+
+type LevelClass_specificSneak_attack {
+    dice_count: Float
+    dice_value: Float
+}
+
+type LevelSpellcasting {
+    cantrips_known: Float
+    spell_slots_level_1: Float
+    spell_slots_level_2: Float
+    spell_slots_level_3: Float
+    spell_slots_level_4: Float
+    spell_slots_level_5: Float
+    spell_slots_level_6: Float
+    spell_slots_level_7: Float
+    spell_slots_level_8: Float
+    spell_slots_level_9: Float
+    spells_known: Float
+}
+
+type LevelSubclass_specific {
+    additional_magical_secrets_max_lvl: Float
+    aura_range: Float
+}
+
+type MagicItem {
+    _id: String!
+    desc: [String]
+    equipment_category: AbilityScoreSkills
+    index: String
+    name: String
+    url: String
+}
+
+type MagicSchool {
+    _id: String!
+    desc: String
+    index: String
+    name: String
+    url: String
+}
+
+type Monster {
+    _id: String!
+    actions: [MonsterActions]
+    alignment: String
+    armor_class: Float
+    challenge_rating: Float
+    charisma: Float
+    condition_immunities: [AbilityScoreSkills]
+    constitution: Float
+    damage_immunities: [String]
+    damage_resistances: [String]
+    damage_vulnerabilities: [String]
+    dexterity: Float
+    forms: [AbilityScoreSkills]
+    hit_dice: String
+    hit_points: Float
+    index: String
+    intelligence: Float
+    languages: String
+    legendary_actions: [MonsterLegendary_actions]
+    name: String
+    proficiencies: [MonsterProficiencies]
+    reactions: [MonsterReactions]
+    senses: MonsterSenses
+    size: String
+    special_abilities: [MonsterSpecial_abilities]
+    speed: MonsterSpeed
+    strength: Float
+    subtype: String
+    type: String
+    url: String
+    wisdom: Float
+    xp: Float
+}
+
+type MonsterActions {
+    attack_bonus: Float
+    damage: [MonsterActionsDamage]
+    desc: String
+    name: String
+}
+
+type MonsterActionsDamage {
+    damage_dice: String
+    damage_type: AbilityScoreSkills
+}
+
+type MonsterLegendary_actions {
+    attack_bonus: Float
+    desc: String
+    name: String
+}
+
+type MonsterProficiencies {
+    proficiency: AbilityScoreSkills
+    value: Float
+}
+
+type MonsterReactions {
+    desc: String
+    name: String
+}
+
+type MonsterSenses {
+    blindsight: String
+    darkvision: String
+    passive_perception: Float
+    tremorsense: String
+    truesight: String
+}
+
+type MonsterSpecial_abilities {
+    desc: String
+    name: String
+}
+
+type MonsterSpeed {
+    burrow: String
+    climb: String
+    fly: String
+    hover: Boolean
+    swim: String
+    walk: String
+}
+
+type Proficiency {
+    _id: String!
+    classes: [AbilityScoreSkills]
+    index: String
+    name: String
+    races: [AbilityScoreSkills]
+    references: [ProficiencyReferences]
+    type: String
+    url: String
+}
+
+type ProficiencyReferences {
+    index: String
+    name: String
+    type: String
+    url: String
+}
+
+type Query {
+    abilityScore(
+        "Filter by fields"
+        filter: FilterFindOneAbilityScoreInput,
+        skip: Int,
+        sort: SortFindOneAbilityScoreInput
+    ): AbilityScore
+    abilityScores(
+        "Filter by fields"
+        filter: FilterFindManyAbilityScoreInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyAbilityScoreInput
+    ): [AbilityScore!]!
+    class(
+        "Filter by fields"
+        filter: FilterFindOneClassInput,
+        skip: Int,
+        sort: SortFindOneClassInput
+    ): Class
+    classes(
+        "Filter by fields"
+        filter: FilterFindManyClassInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyClassInput
+    ): [Class!]!
+    condition(
+        "Filter by fields"
+        filter: FilterFindOneConditionInput,
+        skip: Int,
+        sort: SortFindOneConditionInput
+    ): Condition
+    conditions(
+        "Filter by fields"
+        filter: FilterFindManyConditionInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyConditionInput
+    ): [Condition!]!
+    damageType(
+        "Filter by fields"
+        filter: FilterFindOneDamageTypeInput,
+        skip: Int,
+        sort: SortFindOneDamageTypeInput
+    ): DamageType
+    damageTypes(
+        "Filter by fields"
+        filter: FilterFindManyDamageTypeInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyDamageTypeInput
+    ): [DamageType!]!
+    equipment(
+        "Filter by fields"
+        filter: FilterFindOneEquipmentInput,
+        skip: Int,
+        sort: SortFindOneEquipmentInput
+    ): Equipment
+    equipmentCategories(
+        "Filter by fields"
+        filter: FilterFindManyEquipmentCategoryInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyEquipmentCategoryInput
+    ): [EquipmentCategory!]!
+    equipmentCategory(
+        "Filter by fields"
+        filter: FilterFindOneEquipmentCategoryInput,
+        skip: Int,
+        sort: SortFindOneEquipmentCategoryInput
+    ): EquipmentCategory
+    equipments(
+        "Filter by fields"
+        filter: FilterFindManyEquipmentInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyEquipmentInput
+    ): [Equipment!]!
+    feature(
+        "Filter by fields"
+        filter: FilterFindOneFeatureInput,
+        skip: Int,
+        sort: SortFindOneFeatureInput
+    ): Feature
+    features(
+        "Filter by fields"
+        filter: FilterFindManyFeatureInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyFeatureInput
+    ): [Feature!]!
+    language(
+        "Filter by fields"
+        filter: FilterFindOneLanguageInput,
+        skip: Int,
+        sort: SortFindOneLanguageInput
+    ): Language
+    languages(
+        "Filter by fields"
+        filter: FilterFindManyLanguageInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyLanguageInput
+    ): [Language!]!
+    level(
+        "Filter by fields"
+        filter: FilterFindOneLevelInput,
+        skip: Int,
+        sort: SortFindOneLevelInput
+    ): Level
+    levels(
+        "Filter by fields"
+        filter: FilterFindManyLevelInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyLevelInput
+    ): [Level!]!
+    magicItem(
+        "Filter by fields"
+        filter: FilterFindOneMagicItemInput,
+        skip: Int,
+        sort: SortFindOneMagicItemInput
+    ): MagicItem
+    magicItems(
+        "Filter by fields"
+        filter: FilterFindManyMagicItemInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyMagicItemInput
+    ): [MagicItem!]!
+    magicSchool(
+        "Filter by fields"
+        filter: FilterFindOneMagicSchoolInput,
+        skip: Int,
+        sort: SortFindOneMagicSchoolInput
+    ): MagicSchool
+    magicSchools(
+        "Filter by fields"
+        filter: FilterFindManyMagicSchoolInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyMagicSchoolInput
+    ): [MagicSchool!]!
+    monster(
+        "Filter by fields"
+        filter: FilterFindOneMonsterInput,
+        skip: Int,
+        sort: SortFindOneMonsterInput
+    ): Monster
+    monsters(
+        "Filter by fields"
+        filter: FilterFindManyMonsterInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyMonsterInput
+    ): [Monster!]!
+    proficiencies(
+        "Filter by fields"
+        filter: FilterFindManyProficiencyInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyProficiencyInput
+    ): [Proficiency!]!
+    proficiency(
+        "Filter by fields"
+        filter: FilterFindOneProficiencyInput,
+        skip: Int,
+        sort: SortFindOneProficiencyInput
+    ): Proficiency
+    race(
+        "Filter by fields"
+        filter: FilterFindOneRaceInput,
+        skip: Int,
+        sort: SortFindOneRaceInput
+    ): Race
+    races(
+        "Filter by fields"
+        filter: FilterFindManyRaceInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyRaceInput
+    ): [Race!]!
+    rule(
+        "Filter by fields"
+        filter: FilterFindOneRuleInput,
+        skip: Int,
+        sort: SortFindOneRuleInput
+    ): Rule
+    ruleSection(
+        "Filter by fields"
+        filter: FilterFindOneRuleSectionInput,
+        skip: Int,
+        sort: SortFindOneRuleSectionInput
+    ): RuleSection
+    ruleSections(
+        "Filter by fields"
+        filter: FilterFindManyRuleSectionInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyRuleSectionInput
+    ): [RuleSection!]!
+    rules(
+        "Filter by fields"
+        filter: FilterFindManyRuleInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyRuleInput
+    ): [Rule!]!
+    spell(
+        "Filter by fields"
+        filter: FilterFindOneSpellInput,
+        skip: Int,
+        sort: SortFindOneSpellInput
+    ): Spell
+    spells(
+        "Filter by fields"
+        filter: FilterFindManySpellInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManySpellInput
+    ): [Spell!]!
+    startingequipment(
+        "Filter by fields"
+        filter: FilterFindOneStartingEquipmentInput,
+        skip: Int,
+        sort: SortFindOneStartingEquipmentInput
+    ): StartingEquipment
+    startingequipments(
+        "Filter by fields"
+        filter: FilterFindManyStartingEquipmentInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyStartingEquipmentInput
+    ): [StartingEquipment!]!
+    subclass(
+        "Filter by fields"
+        filter: FilterFindOneSubclassInput,
+        skip: Int,
+        sort: SortFindOneSubclassInput
+    ): Subclass
+    subclasses(
+        "Filter by fields"
+        filter: FilterFindManySubclassInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManySubclassInput
+    ): [Subclass!]!
+    subrace(
+        "Filter by fields"
+        filter: FilterFindOneSubraceInput,
+        skip: Int,
+        sort: SortFindOneSubraceInput
+    ): Subrace
+    subraces(
+        "Filter by fields"
+        filter: FilterFindManySubraceInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManySubraceInput
+    ): [Subrace!]!
+    trait(
+        "Filter by fields"
+        filter: FilterFindOneTraitInput,
+        skip: Int,
+        sort: SortFindOneTraitInput
+    ): Trait
+    traits(
+        "Filter by fields"
+        filter: FilterFindManyTraitInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyTraitInput
+    ): [Trait!]!
+    weaponProperties(
+        "Filter by fields"
+        filter: FilterFindManyWeaponPropertyInput,
+        limit: Int = 100,
+        skip: Int,
+        sort: SortFindManyWeaponPropertyInput
+    ): [WeaponProperty!]!
+    weaponProperty(
+        "Filter by fields"
+        filter: FilterFindOneWeaponPropertyInput,
+        skip: Int,
+        sort: SortFindOneWeaponPropertyInput
+    ): WeaponProperty
+}
+
+type Race {
+    _id: String!
+    ability_bonus_options: RaceAbility_bonus_options
+    ability_bonuses: [RaceAbility_bonuses]
+    age: String
+    alignment: String
+    index: String
+    language_desc: String
+    language_options: RaceLanguage_options
+    languages: [AbilityScoreSkills]
+    name: String
+    size: String
+    size_description: String
+    speed: Float
+    starting_proficiencies: [AbilityScoreSkills]
+    starting_proficiency_options: RaceStarting_proficiency_options
+    subraces: [AbilityScoreSkills]
+    trait_options: RaceTrait_options
+    traits: [AbilityScoreSkills]
+    url: String
+}
+
+type RaceAbility_bonus_options {
+    choose: Float
+    from: [RaceAbility_bonus_optionsFrom]
+    type: String
+}
+
+type RaceAbility_bonus_optionsFrom {
+    ability_score: AbilityScoreSkills
+    bonus: Float
+}
+
+type RaceAbility_bonuses {
+    ability_score: AbilityScoreSkills
+    bonus: Float
+}
+
+type RaceLanguage_options {
+    choose: Float
+    from: [AbilityScoreSkills]
+    type: String
+}
+
+type RaceStarting_proficiency_options {
+    choose: Float
+    from: [AbilityScoreSkills]
+    type: String
+}
+
+type RaceTrait_options {
+    choose: Float
+    from: [AbilityScoreSkills]
+    type: String
+}
+
+type Rule {
+    _id: String!
+    desc: String
+    index: String
+    name: String
+    subsections: [AbilityScoreSkills]
+    url: String
+}
+
+type RuleSection {
+    _id: String!
+    desc: String
+    index: String
+    name: String
+    url: String
+}
+
+type Spell {
+    _id: String!
+    area_of_effect: SpellArea_of_effect
+    attack_type: String
+    casting_time: String
+    classes: [AbilityScoreSkills]
+    components: [String]
+    concentration: Boolean
+    damage: SpellDamage
+    dc: SpellDc
+    desc: [String]
+    duration: String
+    heal_at_slot_level: JSON
+    higher_level: [String]
+    index: String
+    level: Float
+    material: String
+    name: String
+    range: String
+    ritual: Boolean
+    school: AbilityScoreSkills
+    subclasses: [AbilityScoreSkills]
+    url: String
+}
+
+type SpellArea_of_effect {
+    size: Float
+    type: String
+}
+
+type SpellDamage {
+    damage_at_character_level: JSON
+    damage_at_slot_level: JSON
+    damage_type: AbilityScoreSkills
+}
+
+type SpellDc {
+    dc_success: String
+    dc_type: AbilityScoreSkills
+    desc: String
+}
+
+type StartingEquipment {
+    _id: String!
+    class: AbilityScoreSkills
+    index: String
+    starting_equipment: [StartingEquipmentStarting_equipment]
+    starting_equipment_options: [StartingEquipmentStarting_equipment_options]
+    url: String
+}
+
+type StartingEquipmentStarting_equipment {
+    equipment: AbilityScoreSkills
+    quantity: Float
+}
+
+type StartingEquipmentStarting_equipment_options {
+    choose: Float
+    from: [StartingEquipmentStarting_equipment_optionsFrom]
+    type: String
+}
+
+type StartingEquipmentStarting_equipment_optionsFrom {
+    equipment: AbilityScoreSkills
+    quantity: Float
+}
+
+type Subclass {
+    _id: String!
+    class: AbilityScoreSkills
+    desc: [String]
+    index: String
+    name: String
+    spells: [SubclassSpells]
+    subclass_flavor: String
+    subclass_levels: String
+    url: String
+}
+
+type SubclassSpells {
+    prerequisites: [SubclassSpellsPrerequisites]
+    spell: AbilityScoreSkills
+}
+
+type SubclassSpellsPrerequisites {
+    index: String
+    name: String
+    type: String
+    url: String
+}
+
+type Subrace {
+    _id: String!
+    ability_bonuses: [SubraceAbility_bonuses]
+    desc: String
+    index: String
+    language_options: SubraceLanguage_options
+    name: String
+    race: AbilityScoreSkills
+    racial_trait_options: SubraceRacial_trait_options
+    racial_traits: [AbilityScoreSkills]
+    starting_proficiencies: [AbilityScoreSkills]
+    url: String
+}
+
+type SubraceAbility_bonuses {
+    ability_score: AbilityScoreSkills
+    bonus: Float
+}
+
+type SubraceLanguage_options {
+    choose: Float
+    from: [AbilityScoreSkills]
+    type: String
+}
+
+type SubraceRacial_trait_options {
+    choose: Float
+    from: [AbilityScoreSkills]
+    type: String
+}
+
+type Trait {
+    _id: String!
+    desc: [String]
+    index: String
+    name: String
+    proficiencies: [TraitProficiencies]
+    proficiency_choices: TraitProficiency_choices
+    races: [AbilityScoreSkills]
+    subraces: [AbilityScoreSkills]
+    url: String
+}
+
+type TraitProficiencies {
+    index: String
+    name: String
+    url: String
+}
+
+type TraitProficiency_choices {
+    choose: Float
+    from: [AbilityScoreSkills]
+    type: String
+}
+
+type WeaponProperty {
+    _id: String!
+    desc: [String]
+    index: String
+    name: String
+    url: String
+}
+
+enum SortFindManyAbilityScoreInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyClassInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyConditionInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyDamageTypeInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyEquipmentCategoryInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyEquipmentInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyFeatureInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyLanguageInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyLevelInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyMagicItemInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyMagicSchoolInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyMonsterInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyProficiencyInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyRaceInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyRuleInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyRuleSectionInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManySpellInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyStartingEquipmentInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManySubclassInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManySubraceInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyTraitInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindManyWeaponPropertyInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneAbilityScoreInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneClassInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneConditionInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneDamageTypeInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneEquipmentCategoryInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneEquipmentInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneFeatureInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneLanguageInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneLevelInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneMagicItemInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneMagicSchoolInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneMonsterInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneProficiencyInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneRaceInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneRuleInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneRuleSectionInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneSpellInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneStartingEquipmentInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneSubclassInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneSubraceInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneTraitInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+enum SortFindOneWeaponPropertyInput {
+    _ID_ASC
+    _ID_DESC
+}
+
+input FilterFindManyAbilityScoreInput {
+    AND: [FilterFindManyAbilityScoreInput!]
+    OR: [FilterFindManyAbilityScoreInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyAbilityScoreOperatorsInput
+    desc: [String]
+    full_name: String
+    index: String
+    name: String
+    skills: [FilterFindManyAbilityScoreSkillsInput]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyAbilityScoreOperatorsInput {
+    _id: FilterFindManyAbilityScore_idOperatorsInput
+}
+
+input FilterFindManyAbilityScoreSkillsInput {
+    index: String
+    name: String
+    url: String
+}
+
+input FilterFindManyAbilityScore_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyClassInput {
+    AND: [FilterFindManyClassInput!]
+    OR: [FilterFindManyClassInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyClassOperatorsInput
+    class_levels: String
+    hit_die: Float
+    index: String
+    name: String
+    proficiencies: [FilterFindManyAbilityScoreSkillsInput]
+    proficiency_choices: [FilterFindManyClassProficiency_choicesInput]
+    saving_throws: [FilterFindManyAbilityScoreSkillsInput]
+    spellcasting: FilterFindManyClassSpellcastingInput
+    spells: String
+    starting_equipment: String
+    subclasses: [FilterFindManyAbilityScoreSkillsInput]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyClassOperatorsInput {
+    _id: FilterFindManyClass_idOperatorsInput
+}
+
+input FilterFindManyClassProficiency_choicesInput {
+    choose: Float
+    from: [FilterFindManyAbilityScoreSkillsInput]
+    type: String
+}
+
+input FilterFindManyClassSpellcastingInfoInput {
+    desc: [String]
+    name: String
+}
+
+input FilterFindManyClassSpellcastingInput {
+    info: [FilterFindManyClassSpellcastingInfoInput]
+    level: Float
+    spellcasting_ability: FilterFindManyAbilityScoreSkillsInput
+}
+
+input FilterFindManyClass_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyConditionInput {
+    AND: [FilterFindManyConditionInput!]
+    OR: [FilterFindManyConditionInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyConditionOperatorsInput
+    desc: [String]
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyConditionOperatorsInput {
+    _id: FilterFindManyCondition_idOperatorsInput
+}
+
+input FilterFindManyCondition_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyDamageTypeInput {
+    AND: [FilterFindManyDamageTypeInput!]
+    OR: [FilterFindManyDamageTypeInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyDamageTypeOperatorsInput
+    desc: [String]
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyDamageTypeOperatorsInput {
+    _id: FilterFindManyDamageType_idOperatorsInput
+}
+
+input FilterFindManyDamageType_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyEquipmentArmor_classInput {
+    base: Float
+    dex_bonus: Boolean
+    max_bonus: Float
+}
+
+input FilterFindManyEquipmentCategoryInput {
+    AND: [FilterFindManyEquipmentCategoryInput!]
+    OR: [FilterFindManyEquipmentCategoryInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyEquipmentCategoryOperatorsInput
+    equipment: [FilterFindManyAbilityScoreSkillsInput]
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyEquipmentCategoryOperatorsInput {
+    _id: FilterFindManyEquipmentCategory_idOperatorsInput
+}
+
+input FilterFindManyEquipmentCategory_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyEquipmentContentsInput {
+    item: FilterFindManyAbilityScoreSkillsInput
+    quantity: Float
+}
+
+input FilterFindManyEquipmentCostInput {
+    quantity: Float
+    unit: String
+}
+
+input FilterFindManyEquipmentDamageInput {
+    damage_dice: String
+    damage_type: FilterFindManyAbilityScoreSkillsInput
+}
+
+input FilterFindManyEquipmentInput {
+    AND: [FilterFindManyEquipmentInput!]
+    OR: [FilterFindManyEquipmentInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyEquipmentOperatorsInput
+    armor_category: String
+    armor_class: FilterFindManyEquipmentArmor_classInput
+    capacity: String
+    category_range: String
+    contents: [FilterFindManyEquipmentContentsInput]
+    cost: FilterFindManyEquipmentCostInput
+    damage: FilterFindManyEquipmentDamageInput
+    desc: [String]
+    equipment_category: FilterFindManyAbilityScoreSkillsInput
+    gear_category: FilterFindManyAbilityScoreSkillsInput
+    index: String
+    name: String
+    properties: [FilterFindManyAbilityScoreSkillsInput]
+    quantity: Float
+    range: FilterFindManyEquipmentRangeInput
+    special: [String]
+    speed: FilterFindManyEquipmentSpeedInput
+    stealth_disadvantage: Boolean
+    str_minimum: Float
+    throw_range: FilterFindManyEquipmentThrow_rangeInput
+    tool_category: String
+    two_handed_damage: FilterFindManyEquipmentTwo_handed_damageInput
+    url: String
+    vehicle_category: String
+    weapon_category: String
+    weapon_range: String
+    weight: Float
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyEquipmentOperatorsInput {
+    _id: FilterFindManyEquipment_idOperatorsInput
+}
+
+input FilterFindManyEquipmentRangeInput {
+    long: Float
+    normal: Float
+}
+
+input FilterFindManyEquipmentSpeedInput {
+    quantity: Float
+    unit: String
+}
+
+input FilterFindManyEquipmentThrow_rangeInput {
+    long: Float
+    normal: Float
+}
+
+input FilterFindManyEquipmentTwo_handed_damageInput {
+    damage_dice: String
+    damage_type: FilterFindManyAbilityScoreSkillsInput
+}
+
+input FilterFindManyEquipment_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyFeatureChoiceInput {
+    choose: Float
+    from: [FilterFindManyAbilityScoreSkillsInput]
+    type: String
+}
+
+input FilterFindManyFeatureInput {
+    AND: [FilterFindManyFeatureInput!]
+    OR: [FilterFindManyFeatureInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyFeatureOperatorsInput
+    choice: FilterFindManyFeatureChoiceInput
+    class: FilterFindManyAbilityScoreSkillsInput
+    desc: [String]
+    group: String
+    index: String
+    level: Float
+    name: String
+    prerequisites: [FilterFindManyFeaturePrerequisitesInput]
+    reference: String
+    subclass: FilterFindManyAbilityScoreSkillsInput
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyFeatureOperatorsInput {
+    _id: FilterFindManyFeature_idOperatorsInput
+}
+
+input FilterFindManyFeaturePrerequisitesInput {
+    level: Float
+    type: String
+}
+
+input FilterFindManyFeature_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyLanguageInput {
+    AND: [FilterFindManyLanguageInput!]
+    OR: [FilterFindManyLanguageInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyLanguageOperatorsInput
+    desc: String
+    index: String
+    name: String
+    script: String
+    type: String
+    typical_speakers: [String]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyLanguageOperatorsInput {
+    _id: FilterFindManyLanguage_idOperatorsInput
+}
+
+input FilterFindManyLanguage_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyLevelClass_specificCreating_spell_slotsInput {
+    sorcery_point_cost: Float
+    spell_slot_level: Float
+}
+
+input FilterFindManyLevelClass_specificInput {
+    action_surges: Float
+    arcane_recovery_levels: Float
+    aura_range: Float
+    bardic_inspiration_die: Float
+    brutal_critical_dice: Float
+    channel_divinity_charges: Float
+    creating_spell_slots: [FilterFindManyLevelClass_specificCreating_spell_slotsInput]
+    destroy_undead_cr: Float
+    extra_attacks: Float
+    favored_enemies: Float
+    favored_terrain: Float
+    indomitable_uses: Float
+    invocations_known: Float
+    ki_points: Float
+    magical_secrets_max_5: Float
+    magical_secrets_max_7: Float
+    magical_secrets_max_9: Float
+    martial_arts: FilterFindManyLevelClass_specificMartial_artsInput
+    metamagic_known: Float
+    mystic_arcanum_level_6: Float
+    mystic_arcanum_level_7: Float
+    mystic_arcanum_level_8: Float
+    mystic_arcanum_level_9: Float
+    rage_count: Float
+    rage_damage_bonus: Float
+    sneak_attack: FilterFindManyLevelClass_specificSneak_attackInput
+    song_of_rest_die: Float
+    sorcery_points: Float
+    unarmored_movement: Float
+    wild_shape_fly: Boolean
+    wild_shape_max_cr: Float
+    wild_shape_swim: Boolean
+}
+
+input FilterFindManyLevelClass_specificMartial_artsInput {
+    dice_count: Float
+    dice_value: Float
+}
+
+input FilterFindManyLevelClass_specificSneak_attackInput {
+    dice_count: Float
+    dice_value: Float
+}
+
+input FilterFindManyLevelInput {
+    AND: [FilterFindManyLevelInput!]
+    OR: [FilterFindManyLevelInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyLevelOperatorsInput
+    ability_score_bonuses: Float
+    class: FilterFindManyAbilityScoreSkillsInput
+    class_specific: FilterFindManyLevelClass_specificInput
+    feature_choices: [FilterFindManyAbilityScoreSkillsInput]
+    features: [FilterFindManyAbilityScoreSkillsInput]
+    index: String
+    level: Float
+    prof_bonus: Float
+    spellcasting: FilterFindManyLevelSpellcastingInput
+    subclass: FilterFindManyAbilityScoreSkillsInput
+    subclass_specific: FilterFindManyLevelSubclass_specificInput
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyLevelOperatorsInput {
+    _id: FilterFindManyLevel_idOperatorsInput
+}
+
+input FilterFindManyLevelSpellcastingInput {
+    cantrips_known: Float
+    spell_slots_level_1: Float
+    spell_slots_level_2: Float
+    spell_slots_level_3: Float
+    spell_slots_level_4: Float
+    spell_slots_level_5: Float
+    spell_slots_level_6: Float
+    spell_slots_level_7: Float
+    spell_slots_level_8: Float
+    spell_slots_level_9: Float
+    spells_known: Float
+}
+
+input FilterFindManyLevelSubclass_specificInput {
+    additional_magical_secrets_max_lvl: Float
+    aura_range: Float
+}
+
+input FilterFindManyLevel_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyMagicItemInput {
+    AND: [FilterFindManyMagicItemInput!]
+    OR: [FilterFindManyMagicItemInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyMagicItemOperatorsInput
+    desc: [String]
+    equipment_category: FilterFindManyAbilityScoreSkillsInput
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyMagicItemOperatorsInput {
+    _id: FilterFindManyMagicItem_idOperatorsInput
+}
+
+input FilterFindManyMagicItem_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyMagicSchoolInput {
+    AND: [FilterFindManyMagicSchoolInput!]
+    OR: [FilterFindManyMagicSchoolInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyMagicSchoolOperatorsInput
+    desc: String
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyMagicSchoolOperatorsInput {
+    _id: FilterFindManyMagicSchool_idOperatorsInput
+}
+
+input FilterFindManyMagicSchool_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyMonsterActionsDamageInput {
+    damage_dice: String
+    damage_type: FilterFindManyAbilityScoreSkillsInput
+}
+
+input FilterFindManyMonsterActionsInput {
+    attack_bonus: Float
+    damage: [FilterFindManyMonsterActionsDamageInput]
+    desc: String
+    name: String
+}
+
+input FilterFindManyMonsterInput {
+    AND: [FilterFindManyMonsterInput!]
+    OR: [FilterFindManyMonsterInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyMonsterOperatorsInput
+    actions: [FilterFindManyMonsterActionsInput]
+    alignment: String
+    armor_class: Float
+    challenge_rating: Float
+    charisma: Float
+    condition_immunities: [FilterFindManyAbilityScoreSkillsInput]
+    constitution: Float
+    damage_immunities: [String]
+    damage_resistances: [String]
+    damage_vulnerabilities: [String]
+    dexterity: Float
+    forms: [FilterFindManyAbilityScoreSkillsInput]
+    hit_dice: String
+    hit_points: Float
+    index: String
+    intelligence: Float
+    languages: String
+    legendary_actions: [FilterFindManyMonsterLegendary_actionsInput]
+    name: String
+    proficiencies: [FilterFindManyMonsterProficienciesInput]
+    reactions: [FilterFindManyMonsterReactionsInput]
+    senses: FilterFindManyMonsterSensesInput
+    size: String
+    special_abilities: [FilterFindManyMonsterSpecial_abilitiesInput]
+    speed: FilterFindManyMonsterSpeedInput
+    strength: Float
+    subtype: String
+    type: String
+    url: String
+    wisdom: Float
+    xp: Float
+}
+
+input FilterFindManyMonsterLegendary_actionsInput {
+    attack_bonus: Float
+    desc: String
+    name: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyMonsterOperatorsInput {
+    _id: FilterFindManyMonster_idOperatorsInput
+}
+
+input FilterFindManyMonsterProficienciesInput {
+    proficiency: FilterFindManyAbilityScoreSkillsInput
+    value: Float
+}
+
+input FilterFindManyMonsterReactionsInput {
+    desc: String
+    name: String
+}
+
+input FilterFindManyMonsterSensesInput {
+    blindsight: String
+    darkvision: String
+    passive_perception: Float
+    tremorsense: String
+    truesight: String
+}
+
+input FilterFindManyMonsterSpecial_abilitiesInput {
+    desc: String
+    name: String
+}
+
+input FilterFindManyMonsterSpeedInput {
+    burrow: String
+    climb: String
+    fly: String
+    hover: Boolean
+    swim: String
+    walk: String
+}
+
+input FilterFindManyMonster_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyProficiencyInput {
+    AND: [FilterFindManyProficiencyInput!]
+    OR: [FilterFindManyProficiencyInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyProficiencyOperatorsInput
+    classes: [FilterFindManyAbilityScoreSkillsInput]
+    index: String
+    name: String
+    races: [FilterFindManyAbilityScoreSkillsInput]
+    references: [FilterFindManyProficiencyReferencesInput]
+    type: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyProficiencyOperatorsInput {
+    _id: FilterFindManyProficiency_idOperatorsInput
+}
+
+input FilterFindManyProficiencyReferencesInput {
+    index: String
+    name: String
+    type: String
+    url: String
+}
+
+input FilterFindManyProficiency_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyRaceAbility_bonus_optionsFromInput {
+    ability_score: FilterFindManyAbilityScoreSkillsInput
+    bonus: Float
+}
+
+input FilterFindManyRaceAbility_bonus_optionsInput {
+    choose: Float
+    from: [FilterFindManyRaceAbility_bonus_optionsFromInput]
+    type: String
+}
+
+input FilterFindManyRaceAbility_bonusesInput {
+    ability_score: FilterFindManyAbilityScoreSkillsInput
+    bonus: Float
+}
+
+input FilterFindManyRaceInput {
+    AND: [FilterFindManyRaceInput!]
+    OR: [FilterFindManyRaceInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyRaceOperatorsInput
+    ability_bonus_options: FilterFindManyRaceAbility_bonus_optionsInput
+    ability_bonuses: [FilterFindManyRaceAbility_bonusesInput]
+    age: String
+    alignment: String
+    index: String
+    language_desc: String
+    language_options: FilterFindManyRaceLanguage_optionsInput
+    languages: [FilterFindManyAbilityScoreSkillsInput]
+    name: String
+    size: String
+    size_description: String
+    speed: Float
+    starting_proficiencies: [FilterFindManyAbilityScoreSkillsInput]
+    starting_proficiency_options: FilterFindManyRaceStarting_proficiency_optionsInput
+    subraces: [FilterFindManyAbilityScoreSkillsInput]
+    trait_options: FilterFindManyRaceTrait_optionsInput
+    traits: [FilterFindManyAbilityScoreSkillsInput]
+    url: String
+}
+
+input FilterFindManyRaceLanguage_optionsInput {
+    choose: Float
+    from: [FilterFindManyAbilityScoreSkillsInput]
+    type: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyRaceOperatorsInput {
+    _id: FilterFindManyRace_idOperatorsInput
+}
+
+input FilterFindManyRaceStarting_proficiency_optionsInput {
+    choose: Float
+    from: [FilterFindManyAbilityScoreSkillsInput]
+    type: String
+}
+
+input FilterFindManyRaceTrait_optionsInput {
+    choose: Float
+    from: [FilterFindManyAbilityScoreSkillsInput]
+    type: String
+}
+
+input FilterFindManyRace_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyRuleInput {
+    AND: [FilterFindManyRuleInput!]
+    OR: [FilterFindManyRuleInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyRuleOperatorsInput
+    desc: String
+    index: String
+    name: String
+    subsections: [FilterFindManyAbilityScoreSkillsInput]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyRuleOperatorsInput {
+    _id: FilterFindManyRule_idOperatorsInput
+}
+
+input FilterFindManyRuleSectionInput {
+    AND: [FilterFindManyRuleSectionInput!]
+    OR: [FilterFindManyRuleSectionInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyRuleSectionOperatorsInput
+    desc: String
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyRuleSectionOperatorsInput {
+    _id: FilterFindManyRuleSection_idOperatorsInput
+}
+
+input FilterFindManyRuleSection_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyRule_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManySpellArea_of_effectInput {
+    size: Float
+    type: String
+}
+
+input FilterFindManySpellDamageInput {
+    damage_at_character_level: JSON
+    damage_at_slot_level: JSON
+    damage_type: FilterFindManyAbilityScoreSkillsInput
+}
+
+input FilterFindManySpellDcInput {
+    dc_success: String
+    dc_type: FilterFindManyAbilityScoreSkillsInput
+    desc: String
+}
+
+input FilterFindManySpellInput {
+    AND: [FilterFindManySpellInput!]
+    OR: [FilterFindManySpellInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManySpellOperatorsInput
+    area_of_effect: FilterFindManySpellArea_of_effectInput
+    attack_type: String
+    casting_time: String
+    classes: [FilterFindManyAbilityScoreSkillsInput]
+    components: [String]
+    concentration: Boolean
+    damage: FilterFindManySpellDamageInput
+    dc: FilterFindManySpellDcInput
+    desc: [String]
+    duration: String
+    heal_at_slot_level: JSON
+    higher_level: [String]
+    index: String
+    level: Float
+    material: String
+    name: String
+    range: String
+    ritual: Boolean
+    school: FilterFindManyAbilityScoreSkillsInput
+    subclasses: [FilterFindManyAbilityScoreSkillsInput]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManySpellOperatorsInput {
+    _id: FilterFindManySpell_idOperatorsInput
+}
+
+input FilterFindManySpell_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyStartingEquipmentInput {
+    AND: [FilterFindManyStartingEquipmentInput!]
+    OR: [FilterFindManyStartingEquipmentInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyStartingEquipmentOperatorsInput
+    class: FilterFindManyAbilityScoreSkillsInput
+    index: String
+    starting_equipment: [FilterFindManyStartingEquipmentStarting_equipmentInput]
+    starting_equipment_options: [FilterFindManyStartingEquipmentStarting_equipment_optionsInput]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyStartingEquipmentOperatorsInput {
+    _id: FilterFindManyStartingEquipment_idOperatorsInput
+}
+
+input FilterFindManyStartingEquipmentStarting_equipmentInput {
+    equipment: FilterFindManyAbilityScoreSkillsInput
+    quantity: Float
+}
+
+input FilterFindManyStartingEquipmentStarting_equipment_optionsFromInput {
+    equipment: FilterFindManyAbilityScoreSkillsInput
+    quantity: Float
+}
+
+input FilterFindManyStartingEquipmentStarting_equipment_optionsInput {
+    choose: Float
+    from: [FilterFindManyStartingEquipmentStarting_equipment_optionsFromInput]
+    type: String
+}
+
+input FilterFindManyStartingEquipment_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManySubclassInput {
+    AND: [FilterFindManySubclassInput!]
+    OR: [FilterFindManySubclassInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManySubclassOperatorsInput
+    class: FilterFindManyAbilityScoreSkillsInput
+    desc: [String]
+    index: String
+    name: String
+    spells: [FilterFindManySubclassSpellsInput]
+    subclass_flavor: String
+    subclass_levels: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManySubclassOperatorsInput {
+    _id: FilterFindManySubclass_idOperatorsInput
+}
+
+input FilterFindManySubclassSpellsInput {
+    prerequisites: [FilterFindManySubclassSpellsPrerequisitesInput]
+    spell: FilterFindManyAbilityScoreSkillsInput
+}
+
+input FilterFindManySubclassSpellsPrerequisitesInput {
+    index: String
+    name: String
+    type: String
+    url: String
+}
+
+input FilterFindManySubclass_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManySubraceAbility_bonusesInput {
+    ability_score: FilterFindManyAbilityScoreSkillsInput
+    bonus: Float
+}
+
+input FilterFindManySubraceInput {
+    AND: [FilterFindManySubraceInput!]
+    OR: [FilterFindManySubraceInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManySubraceOperatorsInput
+    ability_bonuses: [FilterFindManySubraceAbility_bonusesInput]
+    desc: String
+    index: String
+    language_options: FilterFindManySubraceLanguage_optionsInput
+    name: String
+    race: FilterFindManyAbilityScoreSkillsInput
+    racial_trait_options: FilterFindManySubraceRacial_trait_optionsInput
+    racial_traits: [FilterFindManyAbilityScoreSkillsInput]
+    starting_proficiencies: [FilterFindManyAbilityScoreSkillsInput]
+    url: String
+}
+
+input FilterFindManySubraceLanguage_optionsInput {
+    choose: Float
+    from: [FilterFindManyAbilityScoreSkillsInput]
+    type: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManySubraceOperatorsInput {
+    _id: FilterFindManySubrace_idOperatorsInput
+}
+
+input FilterFindManySubraceRacial_trait_optionsInput {
+    choose: Float
+    from: [FilterFindManyAbilityScoreSkillsInput]
+    type: String
+}
+
+input FilterFindManySubrace_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyTraitInput {
+    AND: [FilterFindManyTraitInput!]
+    OR: [FilterFindManyTraitInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyTraitOperatorsInput
+    desc: [String]
+    index: String
+    name: String
+    proficiencies: [FilterFindManyTraitProficienciesInput]
+    proficiency_choices: FilterFindManyTraitProficiency_choicesInput
+    races: [FilterFindManyAbilityScoreSkillsInput]
+    subraces: [FilterFindManyAbilityScoreSkillsInput]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyTraitOperatorsInput {
+    _id: FilterFindManyTrait_idOperatorsInput
+}
+
+input FilterFindManyTraitProficienciesInput {
+    index: String
+    name: String
+    url: String
+}
+
+input FilterFindManyTraitProficiency_choicesInput {
+    choose: Float
+    from: [FilterFindManyAbilityScoreSkillsInput]
+    type: String
+}
+
+input FilterFindManyTrait_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindManyWeaponPropertyInput {
+    AND: [FilterFindManyWeaponPropertyInput!]
+    OR: [FilterFindManyWeaponPropertyInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindManyWeaponPropertyOperatorsInput
+    desc: [String]
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindManyWeaponPropertyOperatorsInput {
+    _id: FilterFindManyWeaponProperty_idOperatorsInput
+}
+
+input FilterFindManyWeaponProperty_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneAbilityScoreInput {
+    AND: [FilterFindOneAbilityScoreInput!]
+    OR: [FilterFindOneAbilityScoreInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneAbilityScoreOperatorsInput
+    desc: [String]
+    full_name: String
+    index: String
+    name: String
+    skills: [FilterFindOneAbilityScoreSkillsInput]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneAbilityScoreOperatorsInput {
+    _id: FilterFindOneAbilityScore_idOperatorsInput
+}
+
+input FilterFindOneAbilityScoreSkillsInput {
+    index: String
+    name: String
+    url: String
+}
+
+input FilterFindOneAbilityScore_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneClassInput {
+    AND: [FilterFindOneClassInput!]
+    OR: [FilterFindOneClassInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneClassOperatorsInput
+    class_levels: String
+    hit_die: Float
+    index: String
+    name: String
+    proficiencies: [FilterFindOneAbilityScoreSkillsInput]
+    proficiency_choices: [FilterFindOneClassProficiency_choicesInput]
+    saving_throws: [FilterFindOneAbilityScoreSkillsInput]
+    spellcasting: FilterFindOneClassSpellcastingInput
+    spells: String
+    starting_equipment: String
+    subclasses: [FilterFindOneAbilityScoreSkillsInput]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneClassOperatorsInput {
+    _id: FilterFindOneClass_idOperatorsInput
+}
+
+input FilterFindOneClassProficiency_choicesInput {
+    choose: Float
+    from: [FilterFindOneAbilityScoreSkillsInput]
+    type: String
+}
+
+input FilterFindOneClassSpellcastingInfoInput {
+    desc: [String]
+    name: String
+}
+
+input FilterFindOneClassSpellcastingInput {
+    info: [FilterFindOneClassSpellcastingInfoInput]
+    level: Float
+    spellcasting_ability: FilterFindOneAbilityScoreSkillsInput
+}
+
+input FilterFindOneClass_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneConditionInput {
+    AND: [FilterFindOneConditionInput!]
+    OR: [FilterFindOneConditionInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneConditionOperatorsInput
+    desc: [String]
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneConditionOperatorsInput {
+    _id: FilterFindOneCondition_idOperatorsInput
+}
+
+input FilterFindOneCondition_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneDamageTypeInput {
+    AND: [FilterFindOneDamageTypeInput!]
+    OR: [FilterFindOneDamageTypeInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneDamageTypeOperatorsInput
+    desc: [String]
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneDamageTypeOperatorsInput {
+    _id: FilterFindOneDamageType_idOperatorsInput
+}
+
+input FilterFindOneDamageType_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneEquipmentArmor_classInput {
+    base: Float
+    dex_bonus: Boolean
+    max_bonus: Float
+}
+
+input FilterFindOneEquipmentCategoryInput {
+    AND: [FilterFindOneEquipmentCategoryInput!]
+    OR: [FilterFindOneEquipmentCategoryInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneEquipmentCategoryOperatorsInput
+    equipment: [FilterFindOneAbilityScoreSkillsInput]
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneEquipmentCategoryOperatorsInput {
+    _id: FilterFindOneEquipmentCategory_idOperatorsInput
+}
+
+input FilterFindOneEquipmentCategory_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneEquipmentContentsInput {
+    item: FilterFindOneAbilityScoreSkillsInput
+    quantity: Float
+}
+
+input FilterFindOneEquipmentCostInput {
+    quantity: Float
+    unit: String
+}
+
+input FilterFindOneEquipmentDamageInput {
+    damage_dice: String
+    damage_type: FilterFindOneAbilityScoreSkillsInput
+}
+
+input FilterFindOneEquipmentInput {
+    AND: [FilterFindOneEquipmentInput!]
+    OR: [FilterFindOneEquipmentInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneEquipmentOperatorsInput
+    armor_category: String
+    armor_class: FilterFindOneEquipmentArmor_classInput
+    capacity: String
+    category_range: String
+    contents: [FilterFindOneEquipmentContentsInput]
+    cost: FilterFindOneEquipmentCostInput
+    damage: FilterFindOneEquipmentDamageInput
+    desc: [String]
+    equipment_category: FilterFindOneAbilityScoreSkillsInput
+    gear_category: FilterFindOneAbilityScoreSkillsInput
+    index: String
+    name: String
+    properties: [FilterFindOneAbilityScoreSkillsInput]
+    quantity: Float
+    range: FilterFindOneEquipmentRangeInput
+    special: [String]
+    speed: FilterFindOneEquipmentSpeedInput
+    stealth_disadvantage: Boolean
+    str_minimum: Float
+    throw_range: FilterFindOneEquipmentThrow_rangeInput
+    tool_category: String
+    two_handed_damage: FilterFindOneEquipmentTwo_handed_damageInput
+    url: String
+    vehicle_category: String
+    weapon_category: String
+    weapon_range: String
+    weight: Float
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneEquipmentOperatorsInput {
+    _id: FilterFindOneEquipment_idOperatorsInput
+}
+
+input FilterFindOneEquipmentRangeInput {
+    long: Float
+    normal: Float
+}
+
+input FilterFindOneEquipmentSpeedInput {
+    quantity: Float
+    unit: String
+}
+
+input FilterFindOneEquipmentThrow_rangeInput {
+    long: Float
+    normal: Float
+}
+
+input FilterFindOneEquipmentTwo_handed_damageInput {
+    damage_dice: String
+    damage_type: FilterFindOneAbilityScoreSkillsInput
+}
+
+input FilterFindOneEquipment_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneFeatureChoiceInput {
+    choose: Float
+    from: [FilterFindOneAbilityScoreSkillsInput]
+    type: String
+}
+
+input FilterFindOneFeatureInput {
+    AND: [FilterFindOneFeatureInput!]
+    OR: [FilterFindOneFeatureInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneFeatureOperatorsInput
+    choice: FilterFindOneFeatureChoiceInput
+    class: FilterFindOneAbilityScoreSkillsInput
+    desc: [String]
+    group: String
+    index: String
+    level: Float
+    name: String
+    prerequisites: [FilterFindOneFeaturePrerequisitesInput]
+    reference: String
+    subclass: FilterFindOneAbilityScoreSkillsInput
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneFeatureOperatorsInput {
+    _id: FilterFindOneFeature_idOperatorsInput
+}
+
+input FilterFindOneFeaturePrerequisitesInput {
+    level: Float
+    type: String
+}
+
+input FilterFindOneFeature_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneLanguageInput {
+    AND: [FilterFindOneLanguageInput!]
+    OR: [FilterFindOneLanguageInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneLanguageOperatorsInput
+    desc: String
+    index: String
+    name: String
+    script: String
+    type: String
+    typical_speakers: [String]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneLanguageOperatorsInput {
+    _id: FilterFindOneLanguage_idOperatorsInput
+}
+
+input FilterFindOneLanguage_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneLevelClass_specificCreating_spell_slotsInput {
+    sorcery_point_cost: Float
+    spell_slot_level: Float
+}
+
+input FilterFindOneLevelClass_specificInput {
+    action_surges: Float
+    arcane_recovery_levels: Float
+    aura_range: Float
+    bardic_inspiration_die: Float
+    brutal_critical_dice: Float
+    channel_divinity_charges: Float
+    creating_spell_slots: [FilterFindOneLevelClass_specificCreating_spell_slotsInput]
+    destroy_undead_cr: Float
+    extra_attacks: Float
+    favored_enemies: Float
+    favored_terrain: Float
+    indomitable_uses: Float
+    invocations_known: Float
+    ki_points: Float
+    magical_secrets_max_5: Float
+    magical_secrets_max_7: Float
+    magical_secrets_max_9: Float
+    martial_arts: FilterFindOneLevelClass_specificMartial_artsInput
+    metamagic_known: Float
+    mystic_arcanum_level_6: Float
+    mystic_arcanum_level_7: Float
+    mystic_arcanum_level_8: Float
+    mystic_arcanum_level_9: Float
+    rage_count: Float
+    rage_damage_bonus: Float
+    sneak_attack: FilterFindOneLevelClass_specificSneak_attackInput
+    song_of_rest_die: Float
+    sorcery_points: Float
+    unarmored_movement: Float
+    wild_shape_fly: Boolean
+    wild_shape_max_cr: Float
+    wild_shape_swim: Boolean
+}
+
+input FilterFindOneLevelClass_specificMartial_artsInput {
+    dice_count: Float
+    dice_value: Float
+}
+
+input FilterFindOneLevelClass_specificSneak_attackInput {
+    dice_count: Float
+    dice_value: Float
+}
+
+input FilterFindOneLevelInput {
+    AND: [FilterFindOneLevelInput!]
+    OR: [FilterFindOneLevelInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneLevelOperatorsInput
+    ability_score_bonuses: Float
+    class: FilterFindOneAbilityScoreSkillsInput
+    class_specific: FilterFindOneLevelClass_specificInput
+    feature_choices: [FilterFindOneAbilityScoreSkillsInput]
+    features: [FilterFindOneAbilityScoreSkillsInput]
+    index: String
+    level: Float
+    prof_bonus: Float
+    spellcasting: FilterFindOneLevelSpellcastingInput
+    subclass: FilterFindOneAbilityScoreSkillsInput
+    subclass_specific: FilterFindOneLevelSubclass_specificInput
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneLevelOperatorsInput {
+    _id: FilterFindOneLevel_idOperatorsInput
+}
+
+input FilterFindOneLevelSpellcastingInput {
+    cantrips_known: Float
+    spell_slots_level_1: Float
+    spell_slots_level_2: Float
+    spell_slots_level_3: Float
+    spell_slots_level_4: Float
+    spell_slots_level_5: Float
+    spell_slots_level_6: Float
+    spell_slots_level_7: Float
+    spell_slots_level_8: Float
+    spell_slots_level_9: Float
+    spells_known: Float
+}
+
+input FilterFindOneLevelSubclass_specificInput {
+    additional_magical_secrets_max_lvl: Float
+    aura_range: Float
+}
+
+input FilterFindOneLevel_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneMagicItemInput {
+    AND: [FilterFindOneMagicItemInput!]
+    OR: [FilterFindOneMagicItemInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneMagicItemOperatorsInput
+    desc: [String]
+    equipment_category: FilterFindOneAbilityScoreSkillsInput
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneMagicItemOperatorsInput {
+    _id: FilterFindOneMagicItem_idOperatorsInput
+}
+
+input FilterFindOneMagicItem_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneMagicSchoolInput {
+    AND: [FilterFindOneMagicSchoolInput!]
+    OR: [FilterFindOneMagicSchoolInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneMagicSchoolOperatorsInput
+    desc: String
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneMagicSchoolOperatorsInput {
+    _id: FilterFindOneMagicSchool_idOperatorsInput
+}
+
+input FilterFindOneMagicSchool_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneMonsterActionsDamageInput {
+    damage_dice: String
+    damage_type: FilterFindOneAbilityScoreSkillsInput
+}
+
+input FilterFindOneMonsterActionsInput {
+    attack_bonus: Float
+    damage: [FilterFindOneMonsterActionsDamageInput]
+    desc: String
+    name: String
+}
+
+input FilterFindOneMonsterInput {
+    AND: [FilterFindOneMonsterInput!]
+    OR: [FilterFindOneMonsterInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneMonsterOperatorsInput
+    actions: [FilterFindOneMonsterActionsInput]
+    alignment: String
+    armor_class: Float
+    challenge_rating: Float
+    charisma: Float
+    condition_immunities: [FilterFindOneAbilityScoreSkillsInput]
+    constitution: Float
+    damage_immunities: [String]
+    damage_resistances: [String]
+    damage_vulnerabilities: [String]
+    dexterity: Float
+    forms: [FilterFindOneAbilityScoreSkillsInput]
+    hit_dice: String
+    hit_points: Float
+    index: String
+    intelligence: Float
+    languages: String
+    legendary_actions: [FilterFindOneMonsterLegendary_actionsInput]
+    name: String
+    proficiencies: [FilterFindOneMonsterProficienciesInput]
+    reactions: [FilterFindOneMonsterReactionsInput]
+    senses: FilterFindOneMonsterSensesInput
+    size: String
+    special_abilities: [FilterFindOneMonsterSpecial_abilitiesInput]
+    speed: FilterFindOneMonsterSpeedInput
+    strength: Float
+    subtype: String
+    type: String
+    url: String
+    wisdom: Float
+    xp: Float
+}
+
+input FilterFindOneMonsterLegendary_actionsInput {
+    attack_bonus: Float
+    desc: String
+    name: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneMonsterOperatorsInput {
+    _id: FilterFindOneMonster_idOperatorsInput
+}
+
+input FilterFindOneMonsterProficienciesInput {
+    proficiency: FilterFindOneAbilityScoreSkillsInput
+    value: Float
+}
+
+input FilterFindOneMonsterReactionsInput {
+    desc: String
+    name: String
+}
+
+input FilterFindOneMonsterSensesInput {
+    blindsight: String
+    darkvision: String
+    passive_perception: Float
+    tremorsense: String
+    truesight: String
+}
+
+input FilterFindOneMonsterSpecial_abilitiesInput {
+    desc: String
+    name: String
+}
+
+input FilterFindOneMonsterSpeedInput {
+    burrow: String
+    climb: String
+    fly: String
+    hover: Boolean
+    swim: String
+    walk: String
+}
+
+input FilterFindOneMonster_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneProficiencyInput {
+    AND: [FilterFindOneProficiencyInput!]
+    OR: [FilterFindOneProficiencyInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneProficiencyOperatorsInput
+    classes: [FilterFindOneAbilityScoreSkillsInput]
+    index: String
+    name: String
+    races: [FilterFindOneAbilityScoreSkillsInput]
+    references: [FilterFindOneProficiencyReferencesInput]
+    type: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneProficiencyOperatorsInput {
+    _id: FilterFindOneProficiency_idOperatorsInput
+}
+
+input FilterFindOneProficiencyReferencesInput {
+    index: String
+    name: String
+    type: String
+    url: String
+}
+
+input FilterFindOneProficiency_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneRaceAbility_bonus_optionsFromInput {
+    ability_score: FilterFindOneAbilityScoreSkillsInput
+    bonus: Float
+}
+
+input FilterFindOneRaceAbility_bonus_optionsInput {
+    choose: Float
+    from: [FilterFindOneRaceAbility_bonus_optionsFromInput]
+    type: String
+}
+
+input FilterFindOneRaceAbility_bonusesInput {
+    ability_score: FilterFindOneAbilityScoreSkillsInput
+    bonus: Float
+}
+
+input FilterFindOneRaceInput {
+    AND: [FilterFindOneRaceInput!]
+    OR: [FilterFindOneRaceInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneRaceOperatorsInput
+    ability_bonus_options: FilterFindOneRaceAbility_bonus_optionsInput
+    ability_bonuses: [FilterFindOneRaceAbility_bonusesInput]
+    age: String
+    alignment: String
+    index: String
+    language_desc: String
+    language_options: FilterFindOneRaceLanguage_optionsInput
+    languages: [FilterFindOneAbilityScoreSkillsInput]
+    name: String
+    size: String
+    size_description: String
+    speed: Float
+    starting_proficiencies: [FilterFindOneAbilityScoreSkillsInput]
+    starting_proficiency_options: FilterFindOneRaceStarting_proficiency_optionsInput
+    subraces: [FilterFindOneAbilityScoreSkillsInput]
+    trait_options: FilterFindOneRaceTrait_optionsInput
+    traits: [FilterFindOneAbilityScoreSkillsInput]
+    url: String
+}
+
+input FilterFindOneRaceLanguage_optionsInput {
+    choose: Float
+    from: [FilterFindOneAbilityScoreSkillsInput]
+    type: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneRaceOperatorsInput {
+    _id: FilterFindOneRace_idOperatorsInput
+}
+
+input FilterFindOneRaceStarting_proficiency_optionsInput {
+    choose: Float
+    from: [FilterFindOneAbilityScoreSkillsInput]
+    type: String
+}
+
+input FilterFindOneRaceTrait_optionsInput {
+    choose: Float
+    from: [FilterFindOneAbilityScoreSkillsInput]
+    type: String
+}
+
+input FilterFindOneRace_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneRuleInput {
+    AND: [FilterFindOneRuleInput!]
+    OR: [FilterFindOneRuleInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneRuleOperatorsInput
+    desc: String
+    index: String
+    name: String
+    subsections: [FilterFindOneAbilityScoreSkillsInput]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneRuleOperatorsInput {
+    _id: FilterFindOneRule_idOperatorsInput
+}
+
+input FilterFindOneRuleSectionInput {
+    AND: [FilterFindOneRuleSectionInput!]
+    OR: [FilterFindOneRuleSectionInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneRuleSectionOperatorsInput
+    desc: String
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneRuleSectionOperatorsInput {
+    _id: FilterFindOneRuleSection_idOperatorsInput
+}
+
+input FilterFindOneRuleSection_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneRule_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneSpellArea_of_effectInput {
+    size: Float
+    type: String
+}
+
+input FilterFindOneSpellDamageInput {
+    damage_at_character_level: JSON
+    damage_at_slot_level: JSON
+    damage_type: FilterFindOneAbilityScoreSkillsInput
+}
+
+input FilterFindOneSpellDcInput {
+    dc_success: String
+    dc_type: FilterFindOneAbilityScoreSkillsInput
+    desc: String
+}
+
+input FilterFindOneSpellInput {
+    AND: [FilterFindOneSpellInput!]
+    OR: [FilterFindOneSpellInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneSpellOperatorsInput
+    area_of_effect: FilterFindOneSpellArea_of_effectInput
+    attack_type: String
+    casting_time: String
+    classes: [FilterFindOneAbilityScoreSkillsInput]
+    components: [String]
+    concentration: Boolean
+    damage: FilterFindOneSpellDamageInput
+    dc: FilterFindOneSpellDcInput
+    desc: [String]
+    duration: String
+    heal_at_slot_level: JSON
+    higher_level: [String]
+    index: String
+    level: Float
+    material: String
+    name: String
+    range: String
+    ritual: Boolean
+    school: FilterFindOneAbilityScoreSkillsInput
+    subclasses: [FilterFindOneAbilityScoreSkillsInput]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneSpellOperatorsInput {
+    _id: FilterFindOneSpell_idOperatorsInput
+}
+
+input FilterFindOneSpell_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneStartingEquipmentInput {
+    AND: [FilterFindOneStartingEquipmentInput!]
+    OR: [FilterFindOneStartingEquipmentInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneStartingEquipmentOperatorsInput
+    class: FilterFindOneAbilityScoreSkillsInput
+    index: String
+    starting_equipment: [FilterFindOneStartingEquipmentStarting_equipmentInput]
+    starting_equipment_options: [FilterFindOneStartingEquipmentStarting_equipment_optionsInput]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneStartingEquipmentOperatorsInput {
+    _id: FilterFindOneStartingEquipment_idOperatorsInput
+}
+
+input FilterFindOneStartingEquipmentStarting_equipmentInput {
+    equipment: FilterFindOneAbilityScoreSkillsInput
+    quantity: Float
+}
+
+input FilterFindOneStartingEquipmentStarting_equipment_optionsFromInput {
+    equipment: FilterFindOneAbilityScoreSkillsInput
+    quantity: Float
+}
+
+input FilterFindOneStartingEquipmentStarting_equipment_optionsInput {
+    choose: Float
+    from: [FilterFindOneStartingEquipmentStarting_equipment_optionsFromInput]
+    type: String
+}
+
+input FilterFindOneStartingEquipment_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneSubclassInput {
+    AND: [FilterFindOneSubclassInput!]
+    OR: [FilterFindOneSubclassInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneSubclassOperatorsInput
+    class: FilterFindOneAbilityScoreSkillsInput
+    desc: [String]
+    index: String
+    name: String
+    spells: [FilterFindOneSubclassSpellsInput]
+    subclass_flavor: String
+    subclass_levels: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneSubclassOperatorsInput {
+    _id: FilterFindOneSubclass_idOperatorsInput
+}
+
+input FilterFindOneSubclassSpellsInput {
+    prerequisites: [FilterFindOneSubclassSpellsPrerequisitesInput]
+    spell: FilterFindOneAbilityScoreSkillsInput
+}
+
+input FilterFindOneSubclassSpellsPrerequisitesInput {
+    index: String
+    name: String
+    type: String
+    url: String
+}
+
+input FilterFindOneSubclass_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneSubraceAbility_bonusesInput {
+    ability_score: FilterFindOneAbilityScoreSkillsInput
+    bonus: Float
+}
+
+input FilterFindOneSubraceInput {
+    AND: [FilterFindOneSubraceInput!]
+    OR: [FilterFindOneSubraceInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneSubraceOperatorsInput
+    ability_bonuses: [FilterFindOneSubraceAbility_bonusesInput]
+    desc: String
+    index: String
+    language_options: FilterFindOneSubraceLanguage_optionsInput
+    name: String
+    race: FilterFindOneAbilityScoreSkillsInput
+    racial_trait_options: FilterFindOneSubraceRacial_trait_optionsInput
+    racial_traits: [FilterFindOneAbilityScoreSkillsInput]
+    starting_proficiencies: [FilterFindOneAbilityScoreSkillsInput]
+    url: String
+}
+
+input FilterFindOneSubraceLanguage_optionsInput {
+    choose: Float
+    from: [FilterFindOneAbilityScoreSkillsInput]
+    type: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneSubraceOperatorsInput {
+    _id: FilterFindOneSubrace_idOperatorsInput
+}
+
+input FilterFindOneSubraceRacial_trait_optionsInput {
+    choose: Float
+    from: [FilterFindOneAbilityScoreSkillsInput]
+    type: String
+}
+
+input FilterFindOneSubrace_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneTraitInput {
+    AND: [FilterFindOneTraitInput!]
+    OR: [FilterFindOneTraitInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneTraitOperatorsInput
+    desc: [String]
+    index: String
+    name: String
+    proficiencies: [FilterFindOneTraitProficienciesInput]
+    proficiency_choices: FilterFindOneTraitProficiency_choicesInput
+    races: [FilterFindOneAbilityScoreSkillsInput]
+    subraces: [FilterFindOneAbilityScoreSkillsInput]
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneTraitOperatorsInput {
+    _id: FilterFindOneTrait_idOperatorsInput
+}
+
+input FilterFindOneTraitProficienciesInput {
+    index: String
+    name: String
+    url: String
+}
+
+input FilterFindOneTraitProficiency_choicesInput {
+    choose: Float
+    from: [FilterFindOneAbilityScoreSkillsInput]
+    type: String
+}
+
+input FilterFindOneTrait_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+input FilterFindOneWeaponPropertyInput {
+    AND: [FilterFindOneWeaponPropertyInput!]
+    OR: [FilterFindOneWeaponPropertyInput!]
+    _id: String
+    "List of *indexed* fields that can be filtered via operators."
+    _operators: FilterFindOneWeaponPropertyOperatorsInput
+    desc: [String]
+    index: String
+    name: String
+    url: String
+}
+
+"For performance reason this type contains only *indexed* fields."
+input FilterFindOneWeaponPropertyOperatorsInput {
+    _id: FilterFindOneWeaponProperty_idOperatorsInput
+}
+
+input FilterFindOneWeaponProperty_idOperatorsInput {
+    exists: Boolean
+    gt: String
+    gte: String
+    in: [String]
+    lt: String
+    lte: String
+    ne: String
+    nin: [String]
+    regex: RegExpAsString
+}
+
+
+"The string representation of JavaScript regexp. You may provide it with flags \"/^abc.*/i\" or without flags like \"^abc.*\". More info about RegExp characters and flags: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions"
+scalar RegExpAsString
+
+"The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf)."
+scalar JSON
