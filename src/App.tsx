@@ -24,11 +24,6 @@ const CLASSES = gql`
 
 const None: React.FC = () => <p>None</p>;
 
-const Spells: React.FC = () => {
-  console.log('adsfasfd');
-  return <div />;
-};
-
 type ClassInfo = Record<string, any>;
 type SubClassInfo = Record<string, any>;
 
