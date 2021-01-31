@@ -76,9 +76,566 @@ exports[`Storyshots ClassView/Class Cleric 1`] = `
       <h2>
         Spells:
       </h2>
-      <p>
-        Guidance, Light, Mending, Resistance, Sacred Flame, Spare the Dying, Thaumaturgy, Animal Friendship, Bane, Bless, Command, Create or Destroy Water, Cure Wounds, Detect Evil and Good, Detect Magic, Detect Poison and Disease, Guiding Bolt, Healing Word, Inflict Wounds, Protection from Evil and Good, Purify Food and Drink, Sanctuary, Shield of Faith, Aid, Augury, Blindness/Deafness, Calm Emotions, Continual Flame, Enhance Ability, Find Traps, Gentle Repose, Hold Person, Lesser Restoration, Locate Object, Prayer of Healing, Protection from Poison, Silence, Spiritual Weapon, Warding Bond, Zone of Truth, Animate Dead, Beacon of Hope, Bestow Curse, Clairvoyance, Create Food and Water, Daylight, Dispel Magic, Glyph of Warding, Magic Circle, Mass Healing Word, Meld into Stone, Protection from Energy, Remove Curse, Revivify, Sending, Speak with Dead, Spirit Guardians, Tongues, Water Walk, Arcane Eye, Banishment, Control Water, Death Ward, Freedom of Movement, Guardian of Faith, Locate Creature, Stone Shape, Commune, Contagion, Dispel Evil and Good, Flame Strike, Geas, Greater Restoration, Hallow, Insect Plague, Legend Lore, Mass Cure Wounds, Planar Binding, Raise Dead, Scrying, Blade Barrier, Create Undead, Find the Path, Forbiddance, Harm, Heal, Heroes' Feast, Planar Ally, True Seeing, Word of Recall, Conjure Celestial, Divine Word, Etherealness, Fire Storm, Plane Shift, Regenerate, Resurrection, Symbol, Antimagic Field, Control Weather, Earthquake, Holy Aura, Astral Projection, Gate, Mass Heal, True Resurrection
-      </p>
+      <h3
+        className="css-1gtxqqv"
+      >
+        You can cast 
+        4
+         spells:
+      </h3>
+      <ul
+        className="css-ktx1kg"
+      >
+        <li>
+          Two
+           level 
+          1
+           spells
+        </li>
+        <li>
+          Two
+           cantrips
+        </li>
+      </ul>
+      <h3
+        className="css-tkqgqk"
+      >
+        Spell List
+      </h3>
+      <div
+        className="css-vz4yst"
+      >
+        <div
+          className="css-kyq0i0"
+        >
+          Aid
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Animal Friendship
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Animate Dead
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Antimagic Field
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Arcane Eye
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Astral Projection
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Augury
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Bane
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Banishment
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Beacon of Hope
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Bestow Curse
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Blade Barrier
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Bless
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Blindness/Deafness
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Calm Emotions
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Clairvoyance
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Command
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Commune
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Conjure Celestial
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Contagion
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Continual Flame
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Control Water
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Control Weather
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Create Food and Water
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Create Undead
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Create or Destroy Water
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Cure Wounds
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Daylight
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Death Ward
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Detect Evil and Good
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Detect Magic
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Detect Poison and Disease
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Dispel Evil and Good
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Dispel Magic
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Divine Word
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Earthquake
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Enhance Ability
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Etherealness
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Find Traps
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Find the Path
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Fire Storm
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Flame Strike
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Forbiddance
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Freedom of Movement
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Gate
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Geas
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Gentle Repose
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Glyph of Warding
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Greater Restoration
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Guardian of Faith
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Guidance
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Guiding Bolt
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Hallow
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Harm
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Heal
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Healing Word
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Heroes' Feast
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Hold Person
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Holy Aura
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Inflict Wounds
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Insect Plague
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Legend Lore
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Lesser Restoration
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Light
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Locate Creature
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Locate Object
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Magic Circle
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Mass Cure Wounds
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Mass Heal
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Mass Healing Word
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Meld into Stone
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Mending
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Planar Ally
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Planar Binding
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Plane Shift
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Prayer of Healing
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Protection from Energy
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Protection from Evil and Good
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Protection from Poison
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Purify Food and Drink
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Raise Dead
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Regenerate
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Remove Curse
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Resistance
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Resurrection
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Revivify
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Sacred Flame
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Sanctuary
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Scrying
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Sending
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Shield of Faith
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Silence
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Spare the Dying
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Speak with Dead
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Spirit Guardians
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Spiritual Weapon
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Stone Shape
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Symbol
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Thaumaturgy
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Tongues
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          True Resurrection
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          True Seeing
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Warding Bond
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Water Walk
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Word of Recall
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Zone of Truth
+        </div>
+      </div>
       <h2>
         Subclasses
       </h2>
@@ -88,9 +645,60 @@ exports[`Storyshots ClassView/Class Cleric 1`] = `
       <h4>
         Spells: 
       </h4>
-      <p>
-        Bless, Cure Wounds, Lesser Restoration, Spiritual Weapon, Beacon of Hope, Revivify, Death Ward, Mass Cure Wounds, Raise Dead
-      </p>
+      <h3
+        className="css-tkqgqk"
+      >
+        Spell List
+      </h3>
+      <div
+        className="css-vz4yst"
+      >
+        <div
+          className="css-kyq0i0"
+        >
+          Beacon of Hope
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Bless
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Cure Wounds
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Death Ward
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Lesser Restoration
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Mass Cure Wounds
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Raise Dead
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Revivify
+        </div>
+        <div
+          className="css-kyq0i0"
+        >
+          Spiritual Weapon
+        </div>
+      </div>
     </form>
   </div>
 </div>
@@ -175,9 +783,566 @@ exports[`Storyshots ClassView/Class Collection 1`] = `
         <h2>
           Spells:
         </h2>
-        <p>
-          Guidance, Light, Mending, Resistance, Sacred Flame, Spare the Dying, Thaumaturgy, Animal Friendship, Bane, Bless, Command, Create or Destroy Water, Cure Wounds, Detect Evil and Good, Detect Magic, Detect Poison and Disease, Guiding Bolt, Healing Word, Inflict Wounds, Protection from Evil and Good, Purify Food and Drink, Sanctuary, Shield of Faith, Aid, Augury, Blindness/Deafness, Calm Emotions, Continual Flame, Enhance Ability, Find Traps, Gentle Repose, Hold Person, Lesser Restoration, Locate Object, Prayer of Healing, Protection from Poison, Silence, Spiritual Weapon, Warding Bond, Zone of Truth, Animate Dead, Beacon of Hope, Bestow Curse, Clairvoyance, Create Food and Water, Daylight, Dispel Magic, Glyph of Warding, Magic Circle, Mass Healing Word, Meld into Stone, Protection from Energy, Remove Curse, Revivify, Sending, Speak with Dead, Spirit Guardians, Tongues, Water Walk, Arcane Eye, Banishment, Control Water, Death Ward, Freedom of Movement, Guardian of Faith, Locate Creature, Stone Shape, Commune, Contagion, Dispel Evil and Good, Flame Strike, Geas, Greater Restoration, Hallow, Insect Plague, Legend Lore, Mass Cure Wounds, Planar Binding, Raise Dead, Scrying, Blade Barrier, Create Undead, Find the Path, Forbiddance, Harm, Heal, Heroes' Feast, Planar Ally, True Seeing, Word of Recall, Conjure Celestial, Divine Word, Etherealness, Fire Storm, Plane Shift, Regenerate, Resurrection, Symbol, Antimagic Field, Control Weather, Earthquake, Holy Aura, Astral Projection, Gate, Mass Heal, True Resurrection
-        </p>
+        <h3
+          className="css-1gtxqqv"
+        >
+          You can cast 
+          4
+           spells:
+        </h3>
+        <ul
+          className="css-ktx1kg"
+        >
+          <li>
+            Two
+             level 
+            1
+             spells
+          </li>
+          <li>
+            Two
+             cantrips
+          </li>
+        </ul>
+        <h3
+          className="css-tkqgqk"
+        >
+          Spell List
+        </h3>
+        <div
+          className="css-vz4yst"
+        >
+          <div
+            className="css-kyq0i0"
+          >
+            Aid
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Animal Friendship
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Animate Dead
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Antimagic Field
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Arcane Eye
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Astral Projection
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Augury
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Bane
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Banishment
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Beacon of Hope
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Bestow Curse
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Blade Barrier
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Bless
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Blindness/Deafness
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Calm Emotions
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Clairvoyance
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Command
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Commune
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Conjure Celestial
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Contagion
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Continual Flame
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Control Water
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Control Weather
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Create Food and Water
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Create Undead
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Create or Destroy Water
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Cure Wounds
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Daylight
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Death Ward
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Detect Evil and Good
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Detect Magic
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Detect Poison and Disease
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Dispel Evil and Good
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Dispel Magic
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Divine Word
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Earthquake
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Enhance Ability
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Etherealness
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Find Traps
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Find the Path
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Fire Storm
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Flame Strike
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Forbiddance
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Freedom of Movement
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Gate
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Geas
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Gentle Repose
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Glyph of Warding
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Greater Restoration
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Guardian of Faith
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Guidance
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Guiding Bolt
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Hallow
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Harm
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Heal
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Healing Word
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Heroes' Feast
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Hold Person
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Holy Aura
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Inflict Wounds
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Insect Plague
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Legend Lore
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Lesser Restoration
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Light
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Locate Creature
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Locate Object
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Magic Circle
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Mass Cure Wounds
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Mass Heal
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Mass Healing Word
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Meld into Stone
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Mending
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Planar Ally
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Planar Binding
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Plane Shift
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Prayer of Healing
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Protection from Energy
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Protection from Evil and Good
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Protection from Poison
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Purify Food and Drink
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Raise Dead
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Regenerate
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Remove Curse
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Resistance
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Resurrection
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Revivify
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Sacred Flame
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Sanctuary
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Scrying
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Sending
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Shield of Faith
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Silence
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Spare the Dying
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Speak with Dead
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Spirit Guardians
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Spiritual Weapon
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Stone Shape
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Symbol
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Thaumaturgy
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Tongues
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            True Resurrection
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            True Seeing
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Warding Bond
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Water Walk
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Word of Recall
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Zone of Truth
+          </div>
+        </div>
         <h2>
           Subclasses
         </h2>
@@ -187,9 +1352,60 @@ exports[`Storyshots ClassView/Class Collection 1`] = `
         <h4>
           Spells: 
         </h4>
-        <p>
-          Bless, Cure Wounds, Lesser Restoration, Spiritual Weapon, Beacon of Hope, Revivify, Death Ward, Mass Cure Wounds, Raise Dead
-        </p>
+        <h3
+          className="css-tkqgqk"
+        >
+          Spell List
+        </h3>
+        <div
+          className="css-vz4yst"
+        >
+          <div
+            className="css-kyq0i0"
+          >
+            Beacon of Hope
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Bless
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Cure Wounds
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Death Ward
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Lesser Restoration
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Mass Cure Wounds
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Raise Dead
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Revivify
+          </div>
+          <div
+            className="css-kyq0i0"
+          >
+            Spiritual Weapon
+          </div>
+        </div>
       </form>
     </div>
   </div>
@@ -543,4 +1759,578 @@ exports[`Storyshots SVGIcons Pin Icon 1`] = `
     />
   </g>
 </svg>
+`;
+
+exports[`Storyshots Spells Default 1`] = `
+Array [
+  <h2>
+    Spells:
+  </h2>,
+  <h3
+    className="css-1gtxqqv"
+  >
+    You can cast 
+    10
+     spells:
+  </h3>,
+  <ul
+    className="css-ktx1kg"
+  >
+    <li>
+      Four
+       level 
+      1
+       spells
+    </li>
+    <li>
+      Three
+       level 
+      2
+       spells
+    </li>
+    <li>
+      Three
+       cantrips
+    </li>
+  </ul>,
+  <h3
+    className="css-tkqgqk"
+  >
+    Spell List
+  </h3>,
+  <div
+    className="css-vz4yst"
+  >
+    <div
+      className="css-kyq0i0"
+    >
+      Aid
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Animal Friendship
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Animate Dead
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Antimagic Field
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Arcane Eye
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Astral Projection
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Augury
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Bane
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Banishment
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Beacon of Hope
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Bestow Curse
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Blade Barrier
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Bless
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Blindness/Deafness
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Calm Emotions
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Clairvoyance
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Command
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Commune
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Conjure Celestial
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Contagion
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Continual Flame
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Control Water
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Control Weather
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Create Food and Water
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Create Undead
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Create or Destroy Water
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Cure Wounds
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Daylight
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Death Ward
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Detect Evil and Good
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Detect Magic
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Detect Poison and Disease
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Dispel Evil and Good
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Dispel Magic
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Divine Word
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Earthquake
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Enhance Ability
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Etherealness
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Find Traps
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Find the Path
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Fire Storm
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Flame Strike
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Forbiddance
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Freedom of Movement
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Gate
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Geas
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Gentle Repose
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Glyph of Warding
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Greater Restoration
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Guardian of Faith
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Guidance
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Guiding Bolt
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Hallow
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Harm
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Heal
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Healing Word
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Heroes' Feast
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Hold Person
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Holy Aura
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Inflict Wounds
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Insect Plague
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Legend Lore
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Lesser Restoration
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Light
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Locate Creature
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Locate Object
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Magic Circle
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Mass Cure Wounds
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Mass Heal
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Mass Healing Word
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Meld into Stone
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Mending
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Planar Ally
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Planar Binding
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Plane Shift
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Prayer of Healing
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Protection from Energy
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Protection from Evil and Good
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Protection from Poison
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Purify Food and Drink
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Raise Dead
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Regenerate
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Remove Curse
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Resistance
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Resurrection
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Revivify
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Sacred Flame
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Sanctuary
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Scrying
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Sending
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Shield of Faith
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Silence
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Spare the Dying
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Speak with Dead
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Spirit Guardians
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Spiritual Weapon
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Stone Shape
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Symbol
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Thaumaturgy
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Tongues
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      True Resurrection
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      True Seeing
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Warding Bond
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Water Walk
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Word of Recall
+    </div>
+    <div
+      className="css-kyq0i0"
+    >
+      Zone of Truth
+    </div>
+  </div>,
+]
 `;
