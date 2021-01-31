@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { ClassDisplay, ClassDisplayProps } from './ClassView';
 import { useDndData } from './data';
 import styled from '@emotion/styled';
+import { LoadingSpinner } from './Icons';
 
 const ClassContainer = styled.div`
   display: flex;
@@ -35,7 +36,16 @@ const App = () => {
     <AppContainer className="App">
       <h1>Select a class</h1>
       {loading ? (
-        <div>Loading...</div>
+        <h1
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          Loading&nbsp;&nbsp;&nbsp;
+          <LoadingSpinner />
+        </h1>
       ) : (
         <ClassContainer>{classes}</ClassContainer>
       )}

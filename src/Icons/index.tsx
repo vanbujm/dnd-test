@@ -1,4 +1,28 @@
 import React from 'react';
+import styled from '@emotion/styled';
+import { keyframes } from '@emotion/react';
+
+const rotation = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+`;
+
+const SpinningImage = styled.img`
+  animation: ${rotation} 2s infinite linear;
+`;
+
+export const LoadingSpinner: React.FC = () => (
+  <SpinningImage
+    width={30}
+    height={30}
+    src={`${process.env.PUBLIC_URL}/icons/Class Icon - Artificer.svg`}
+    alt="Loading spinner"
+  />
+);
 
 export interface PinProps {
   width?: number;
