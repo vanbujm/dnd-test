@@ -2,7 +2,7 @@
 
 exports[`Storyshots ClassView/Class Cleric 1`] = `
 <div
-  className="css-mv6p84"
+  className="css-re7gv7"
 >
   <input
     alt="Cleric class info"
@@ -50,29 +50,48 @@ exports[`Storyshots ClassView/Class Cleric 1`] = `
     </svg>
   </button>
   <div
-    className="css-1dy7uyy"
+    className="css-escu6n"
   >
-    <h1>
-      Cleric
-    </h1>
-    <h2>
-      Spells:
-    </h2>
-    <p>
-      Guidance, Light, Mending, Resistance, Sacred Flame, Spare the Dying, Thaumaturgy, Animal Friendship, Bane, Bless, Command, Create or Destroy Water, Cure Wounds, Detect Evil and Good, Detect Magic, Detect Poison and Disease, Guiding Bolt, Healing Word, Inflict Wounds, Protection from Evil and Good, Purify Food and Drink, Sanctuary, Shield of Faith, Aid, Augury, Blindness/Deafness, Calm Emotions, Continual Flame, Enhance Ability, Find Traps, Gentle Repose, Hold Person, Lesser Restoration, Locate Object, Prayer of Healing, Protection from Poison, Silence, Spiritual Weapon, Warding Bond, Zone of Truth, Animate Dead, Beacon of Hope, Bestow Curse, Clairvoyance, Create Food and Water, Daylight, Dispel Magic, Glyph of Warding, Magic Circle, Mass Healing Word, Meld into Stone, Protection from Energy, Remove Curse, Revivify, Sending, Speak with Dead, Spirit Guardians, Tongues, Water Walk, Arcane Eye, Banishment, Control Water, Death Ward, Freedom of Movement, Guardian of Faith, Locate Creature, Stone Shape, Commune, Contagion, Dispel Evil and Good, Flame Strike, Geas, Greater Restoration, Hallow, Insect Plague, Legend Lore, Mass Cure Wounds, Planar Binding, Raise Dead, Scrying, Blade Barrier, Create Undead, Find the Path, Forbiddance, Harm, Heal, Heroes' Feast, Planar Ally, True Seeing, Word of Recall, Conjure Celestial, Divine Word, Etherealness, Fire Storm, Plane Shift, Regenerate, Resurrection, Symbol, Antimagic Field, Control Weather, Earthquake, Holy Aura, Astral Projection, Gate, Mass Heal, True Resurrection
-    </p>
-    <h2>
-      Subclasses
-    </h2>
-    <h3>
-      Life
-    </h3>
-    <h4>
-      Spells: 
-    </h4>
-    <p>
-      Bless, Cure Wounds, Lesser Restoration, Spiritual Weapon, Beacon of Hope, Revivify, Death Ward, Mass Cure Wounds, Raise Dead
-    </p>
+    <form>
+      <h1>
+        Cleric
+      </h1>
+      <div
+        className="css-jc17so"
+      >
+        <input
+          className="css-1npj8ef"
+          id="level-Cleric"
+          onChange={[Function]}
+          type="number"
+          value="1"
+        />
+        <label
+          className="css-189idq0"
+          htmlFor="level-Cleric"
+        >
+          Level
+        </label>
+      </div>
+      <h2>
+        Spells:
+      </h2>
+      <p>
+        Guidance, Light, Mending, Resistance, Sacred Flame, Spare the Dying, Thaumaturgy, Animal Friendship, Bane, Bless, Command, Create or Destroy Water, Cure Wounds, Detect Evil and Good, Detect Magic, Detect Poison and Disease, Guiding Bolt, Healing Word, Inflict Wounds, Protection from Evil and Good, Purify Food and Drink, Sanctuary, Shield of Faith, Aid, Augury, Blindness/Deafness, Calm Emotions, Continual Flame, Enhance Ability, Find Traps, Gentle Repose, Hold Person, Lesser Restoration, Locate Object, Prayer of Healing, Protection from Poison, Silence, Spiritual Weapon, Warding Bond, Zone of Truth, Animate Dead, Beacon of Hope, Bestow Curse, Clairvoyance, Create Food and Water, Daylight, Dispel Magic, Glyph of Warding, Magic Circle, Mass Healing Word, Meld into Stone, Protection from Energy, Remove Curse, Revivify, Sending, Speak with Dead, Spirit Guardians, Tongues, Water Walk, Arcane Eye, Banishment, Control Water, Death Ward, Freedom of Movement, Guardian of Faith, Locate Creature, Stone Shape, Commune, Contagion, Dispel Evil and Good, Flame Strike, Geas, Greater Restoration, Hallow, Insect Plague, Legend Lore, Mass Cure Wounds, Planar Binding, Raise Dead, Scrying, Blade Barrier, Create Undead, Find the Path, Forbiddance, Harm, Heal, Heroes' Feast, Planar Ally, True Seeing, Word of Recall, Conjure Celestial, Divine Word, Etherealness, Fire Storm, Plane Shift, Regenerate, Resurrection, Symbol, Antimagic Field, Control Weather, Earthquake, Holy Aura, Astral Projection, Gate, Mass Heal, True Resurrection
+      </p>
+      <h2>
+        Subclasses
+      </h2>
+      <h3>
+        Life
+      </h3>
+      <h4>
+        Spells: 
+      </h4>
+      <p>
+        Bless, Cure Wounds, Lesser Restoration, Spiritual Weapon, Beacon of Hope, Revivify, Death Ward, Mass Cure Wounds, Raise Dead
+      </p>
+    </form>
   </div>
 </div>
 `;
@@ -82,7 +101,7 @@ exports[`Storyshots ClassView/Class Collection 1`] = `
   className="css-xysbf1"
 >
   <div
-    className="css-mv6p84"
+    className="css-re7gv7"
   >
     <input
       alt="Cleric class info"
@@ -130,33 +149,52 @@ exports[`Storyshots ClassView/Class Collection 1`] = `
       </svg>
     </button>
     <div
-      className="css-1dy7uyy"
+      className="css-escu6n"
     >
-      <h1>
-        Cleric
-      </h1>
-      <h2>
-        Spells:
-      </h2>
-      <p>
-        Guidance, Light, Mending, Resistance, Sacred Flame, Spare the Dying, Thaumaturgy, Animal Friendship, Bane, Bless, Command, Create or Destroy Water, Cure Wounds, Detect Evil and Good, Detect Magic, Detect Poison and Disease, Guiding Bolt, Healing Word, Inflict Wounds, Protection from Evil and Good, Purify Food and Drink, Sanctuary, Shield of Faith, Aid, Augury, Blindness/Deafness, Calm Emotions, Continual Flame, Enhance Ability, Find Traps, Gentle Repose, Hold Person, Lesser Restoration, Locate Object, Prayer of Healing, Protection from Poison, Silence, Spiritual Weapon, Warding Bond, Zone of Truth, Animate Dead, Beacon of Hope, Bestow Curse, Clairvoyance, Create Food and Water, Daylight, Dispel Magic, Glyph of Warding, Magic Circle, Mass Healing Word, Meld into Stone, Protection from Energy, Remove Curse, Revivify, Sending, Speak with Dead, Spirit Guardians, Tongues, Water Walk, Arcane Eye, Banishment, Control Water, Death Ward, Freedom of Movement, Guardian of Faith, Locate Creature, Stone Shape, Commune, Contagion, Dispel Evil and Good, Flame Strike, Geas, Greater Restoration, Hallow, Insect Plague, Legend Lore, Mass Cure Wounds, Planar Binding, Raise Dead, Scrying, Blade Barrier, Create Undead, Find the Path, Forbiddance, Harm, Heal, Heroes' Feast, Planar Ally, True Seeing, Word of Recall, Conjure Celestial, Divine Word, Etherealness, Fire Storm, Plane Shift, Regenerate, Resurrection, Symbol, Antimagic Field, Control Weather, Earthquake, Holy Aura, Astral Projection, Gate, Mass Heal, True Resurrection
-      </p>
-      <h2>
-        Subclasses
-      </h2>
-      <h3>
-        Life
-      </h3>
-      <h4>
-        Spells: 
-      </h4>
-      <p>
-        Bless, Cure Wounds, Lesser Restoration, Spiritual Weapon, Beacon of Hope, Revivify, Death Ward, Mass Cure Wounds, Raise Dead
-      </p>
+      <form>
+        <h1>
+          Cleric
+        </h1>
+        <div
+          className="css-jc17so"
+        >
+          <input
+            className="css-1npj8ef"
+            id="level-Cleric"
+            onChange={[Function]}
+            type="number"
+            value="1"
+          />
+          <label
+            className="css-189idq0"
+            htmlFor="level-Cleric"
+          >
+            Level
+          </label>
+        </div>
+        <h2>
+          Spells:
+        </h2>
+        <p>
+          Guidance, Light, Mending, Resistance, Sacred Flame, Spare the Dying, Thaumaturgy, Animal Friendship, Bane, Bless, Command, Create or Destroy Water, Cure Wounds, Detect Evil and Good, Detect Magic, Detect Poison and Disease, Guiding Bolt, Healing Word, Inflict Wounds, Protection from Evil and Good, Purify Food and Drink, Sanctuary, Shield of Faith, Aid, Augury, Blindness/Deafness, Calm Emotions, Continual Flame, Enhance Ability, Find Traps, Gentle Repose, Hold Person, Lesser Restoration, Locate Object, Prayer of Healing, Protection from Poison, Silence, Spiritual Weapon, Warding Bond, Zone of Truth, Animate Dead, Beacon of Hope, Bestow Curse, Clairvoyance, Create Food and Water, Daylight, Dispel Magic, Glyph of Warding, Magic Circle, Mass Healing Word, Meld into Stone, Protection from Energy, Remove Curse, Revivify, Sending, Speak with Dead, Spirit Guardians, Tongues, Water Walk, Arcane Eye, Banishment, Control Water, Death Ward, Freedom of Movement, Guardian of Faith, Locate Creature, Stone Shape, Commune, Contagion, Dispel Evil and Good, Flame Strike, Geas, Greater Restoration, Hallow, Insect Plague, Legend Lore, Mass Cure Wounds, Planar Binding, Raise Dead, Scrying, Blade Barrier, Create Undead, Find the Path, Forbiddance, Harm, Heal, Heroes' Feast, Planar Ally, True Seeing, Word of Recall, Conjure Celestial, Divine Word, Etherealness, Fire Storm, Plane Shift, Regenerate, Resurrection, Symbol, Antimagic Field, Control Weather, Earthquake, Holy Aura, Astral Projection, Gate, Mass Heal, True Resurrection
+        </p>
+        <h2>
+          Subclasses
+        </h2>
+        <h3>
+          Life
+        </h3>
+        <h4>
+          Spells: 
+        </h4>
+        <p>
+          Bless, Cure Wounds, Lesser Restoration, Spiritual Weapon, Beacon of Hope, Revivify, Death Ward, Mass Cure Wounds, Raise Dead
+        </p>
+      </form>
     </div>
   </div>
   <div
-    className="css-mv6p84"
+    className="css-re7gv7"
   >
     <input
       alt="Monk class info"
@@ -204,29 +242,48 @@ exports[`Storyshots ClassView/Class Collection 1`] = `
       </svg>
     </button>
     <div
-      className="css-1dy7uyy"
+      className="css-escu6n"
     >
-      <h1>
-        Monk
-      </h1>
-      <h2>
-        Spells:
-      </h2>
-      <p>
-        None
-      </p>
-      <h2>
-        Subclasses
-      </h2>
-      <h3>
-        Open Hand
-      </h3>
-      <h4>
-        Spells: 
-      </h4>
-      <p>
-        None
-      </p>
+      <form>
+        <h1>
+          Monk
+        </h1>
+        <div
+          className="css-jc17so"
+        >
+          <input
+            className="css-1npj8ef"
+            id="level-Monk"
+            onChange={[Function]}
+            type="number"
+            value="1"
+          />
+          <label
+            className="css-189idq0"
+            htmlFor="level-Monk"
+          >
+            Level
+          </label>
+        </div>
+        <h2>
+          Spells:
+        </h2>
+        <p>
+          None
+        </p>
+        <h2>
+          Subclasses
+        </h2>
+        <h3>
+          Open Hand
+        </h3>
+        <h4>
+          Spells: 
+        </h4>
+        <p>
+          None
+        </p>
+      </form>
     </div>
   </div>
 </div>
@@ -234,7 +291,7 @@ exports[`Storyshots ClassView/Class Collection 1`] = `
 
 exports[`Storyshots ClassView/Class Monk 1`] = `
 <div
-  className="css-mv6p84"
+  className="css-re7gv7"
 >
   <input
     alt="Monk class info"
@@ -282,29 +339,48 @@ exports[`Storyshots ClassView/Class Monk 1`] = `
     </svg>
   </button>
   <div
-    className="css-1dy7uyy"
+    className="css-escu6n"
   >
-    <h1>
-      Monk
-    </h1>
-    <h2>
-      Spells:
-    </h2>
-    <p>
-      None
-    </p>
-    <h2>
-      Subclasses
-    </h2>
-    <h3>
-      Open Hand
-    </h3>
-    <h4>
-      Spells: 
-    </h4>
-    <p>
-      None
-    </p>
+    <form>
+      <h1>
+        Monk
+      </h1>
+      <div
+        className="css-jc17so"
+      >
+        <input
+          className="css-1npj8ef"
+          id="level-Monk"
+          onChange={[Function]}
+          type="number"
+          value="1"
+        />
+        <label
+          className="css-189idq0"
+          htmlFor="level-Monk"
+        >
+          Level
+        </label>
+      </div>
+      <h2>
+        Spells:
+      </h2>
+      <p>
+        None
+      </p>
+      <h2>
+        Subclasses
+      </h2>
+      <h3>
+        Open Hand
+      </h3>
+      <h4>
+        Spells: 
+      </h4>
+      <p>
+        None
+      </p>
+    </form>
   </div>
 </div>
 `;
@@ -412,6 +488,26 @@ exports[`Storyshots Icons Icon Collection 1`] = `
     tabIndex={0}
     type="image"
   />
+</div>
+`;
+
+exports[`Storyshots Inputs/Level Level Input 1`] = `
+<div
+  className="css-d1149t"
+>
+  <input
+    className="css-1npj8ef"
+    id="level-undefined"
+    onChange={[Function]}
+    type="number"
+    value="1"
+  />
+  <label
+    className="css-189idq0"
+    htmlFor="level-undefined"
+  >
+    Level
+  </label>
 </div>
 `;
 

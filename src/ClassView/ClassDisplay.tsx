@@ -10,6 +10,7 @@ import {
 } from '../ClassIcon';
 import styled from '@emotion/styled';
 import { Pin } from '../Icons';
+import { Level } from '../Level';
 
 export interface ClassDisplayProps {
   name: string;
@@ -20,6 +21,7 @@ export interface ClassDisplayProps {
 const ClassContainer = styled.div`
   position: relative;
   height: calc(2 * ${iconImgPadding}rem + ${iconImgSize}px + 1rem);
+  width: calc(2 * ${iconImgPadding}rem + ${iconImgSize}px + 1rem);
 `;
 
 const RevealingClassIcon = styled(ClassIcon)<{ clicked: boolean }>`
@@ -100,6 +102,12 @@ const ClassInfoContainer = styled.div<{
   width: 40vw;
 `;
 
+const PositionedLevelInput = styled(Level)`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+`;
+
 export const ClassDisplay: React.FC<ClassDisplayProps> = ({
   name,
   spells,
@@ -116,6 +124,7 @@ export const ClassDisplay: React.FC<ClassDisplayProps> = ({
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       const { right } = ref.current.getBoundingClientRect();
+
       if (right > (window.innerWidth || document.documentElement.clientWidth)) {
         setAppearRight(false);
       }
@@ -143,20 +152,23 @@ export const ClassDisplay: React.FC<ClassDisplayProps> = ({
         clicked={clicked}
         ref={ref as any}
       >
-        <h1>{name}</h1>
-        <h2>Spells:</h2>
-        {spells ? <p>{spells.join(', ')}</p> : <None />}
-        <h2>Subclasses</h2>
-        {subclasses ? (
-          subclasses.map((subClass: Record<string, any>) => (
-            <SubClassDisplay
-              key={subClass.name}
-              {...(subClass as SubClassDisplayProps)}
-            />
-          ))
-        ) : (
-          <None />
-        )}
+        <form>
+          <h1>{name}</h1>
+          <PositionedLevelInput dndClass={name} />
+          <h2>Spells:</h2>
+          {spells ? <p>{spells.join(', ')}</p> : <None />}
+          <h2>Subclasses</h2>
+          {subclasses ? (
+            subclasses.map((subClass: Record<string, any>) => (
+              <SubClassDisplay
+                key={subClass.name}
+                {...(subClass as SubClassDisplayProps)}
+              />
+            ))
+          ) : (
+            <None />
+          )}
+        </form>
       </ClassInfoContainer>
     </ClassContainer>
   );

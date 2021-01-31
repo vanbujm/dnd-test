@@ -1,5 +1,8 @@
 import { css } from '@emotion/react';
 
+export const headingFont = "'IM Fell Double Pica', serif";
+export const bodyFont = "'EB Garamond', serif";
+
 export const globalStyle = css`
   h1,
   h2,
@@ -7,12 +10,12 @@ export const globalStyle = css`
   h4,
   h5,
   h6 {
-    font-family: 'IM Fell Double Pica', serif;
+    font-family: ${headingFont};
   }
 
   div,
   p,
   span {
-    font-family: 'EB Garamond', serif;
+    font-family: ${bodyFont};
   }
 `;

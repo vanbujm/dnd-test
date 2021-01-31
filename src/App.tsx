@@ -5,10 +5,7 @@ import styled from '@emotion/styled';
 
 const ClassContainer = styled.div`
   display: flex;
-
-  & > * {
-    flex: 1;
-  }
+  flex-wrap: wrap;
 `;
 
 const AppContainer = styled.div`
