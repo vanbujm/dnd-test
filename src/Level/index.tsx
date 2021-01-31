@@ -1,4 +1,4 @@
-import React, { Component, useCallback, useState } from 'react';
+import React, { useCallback } from 'react';
 import styled from '@emotion/styled';
 import { headingFont } from '../globalStyles';
 
