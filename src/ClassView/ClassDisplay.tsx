@@ -11,11 +11,13 @@ import {
 import styled from '@emotion/styled';
 import { Pin } from '../Icons';
 import { Level } from '../Level';
+import { SpellDisplay } from '../SpellDisplay';
 
 export interface ClassDisplayProps {
   name: string;
   spells: string[] | null;
   subclasses: SubClassDisplayProps[];
+  spellList?: Record<string, Record<string, number>>;
 }
 
 const ClassContainer = styled.div`
@@ -102,22 +104,24 @@ const ClassInfoContainer = styled.div<{
   width: 40vw;
 `;
 
-const PositionedLevelInput = styled(Level)`
+const PositionedLevelInput = styled(Level)<{ appearRight: boolean }>`
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: ${({ appearRight }) => (appearRight ? 1 : 6)}rem;
 `;
 
 export const ClassDisplay: React.FC<ClassDisplayProps> = ({
   name,
   spells,
   subclasses,
+  spellList,
 }) => {
   const ref = useRef();
 
   const [appearRight, setAppearRight] = useState(true);
   const [clicked, setClicked] = useState(false);
   const toggleClicked = useCallback(() => setClicked(!clicked), [clicked]);
+  const [level, setLevel] = useState('1');
 
   useEffect(() => {
     if (ref.current) {
@@ -130,7 +134,6 @@ export const ClassDisplay: React.FC<ClassDisplayProps> = ({
       }
     }
   }, []);
-
   return (
     <ClassContainer>
       <RevealingClassIcon
@@ -154,9 +157,18 @@ export const ClassDisplay: React.FC<ClassDisplayProps> = ({
       >
         <form>
           <h1>{name}</h1>
-          <PositionedLevelInput dndClass={name} />
-          <h2>Spells:</h2>
-          {spells ? <p>{spells.join(', ')}</p> : <None />}
+          <PositionedLevelInput
+            appearRight={appearRight}
+            value={level}
+            setValue={setLevel}
+            dndClass={name}
+          />
+          <SpellDisplay
+            spells={spells}
+            spellList={spellList}
+            level={level}
+            name={name}
+          />
           <h2>Subclasses</h2>
           {subclasses ? (
             subclasses.map((subClass: Record<string, any>) => (

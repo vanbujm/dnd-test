@@ -13,18 +13,22 @@ const AppContainer = styled.div`
 `;
 
 const App = () => {
-  const { data, loading }: any = useDndData();
+  const { data, loading, spellLists }: any = useDndData();
   const classes = useMemo(
     () =>
       data
-        ? data.map((theClass: Record<string, any>) => (
-            <ClassDisplay
-              key={theClass.name}
-              {...(theClass as ClassDisplayProps)}
-            />
-          ))
+        ? data.map((theClass: Record<string, any>) => {
+            const spellList = spellLists ? spellLists[theClass.name] : null;
+            return (
+              <ClassDisplay
+                key={theClass.name}
+                {...(theClass as ClassDisplayProps)}
+                spellList={spellList}
+              />
+            );
+          })
         : null,
-    [data]
+    [data, spellLists]
   );
 
   return (

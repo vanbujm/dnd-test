@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { Component, useCallback, useState } from 'react';
 import styled from '@emotion/styled';
 import { headingFont } from '../globalStyles';
 
@@ -55,28 +55,26 @@ const Label = styled.label`
 export interface LevelProps {
   dndClass: string;
   inputProps?: any;
+  value: string;
+  setValue: (value: string) => void;
 }
 
 export const Level: React.FC<LevelProps> = ({
   dndClass,
   inputProps,
+  value,
+  setValue,
   ...props
 }) => {
   const id = `level-${dndClass}`;
-  const [value, setValue] = useState('1');
 
   const setLevelHandler = useCallback(
     (e) => {
       if (!e.target) return;
       const value = e.target.value;
-      const valueToSet = Number(value);
-      if (isNaN(valueToSet)) return;
-      const parentChangeHandler =
-        inputProps && inputProps.onChange ? inputProps.onChange : () => value;
-      setValue(`${valueToSet}`);
-      parentChangeHandler(valueToSet);
+      setValue(value);
     },
-    [inputProps]
+    [setValue]
   );
 
   return (

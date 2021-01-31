@@ -1,5 +1,6 @@
 import React from 'react';
 import { None } from './common';
+import { SpellNameList } from '../SpellDisplay/SpellNameList';
 
 export interface SubClassDisplayProps {
   name: string;
@@ -16,7 +17,10 @@ export const SubClassDisplay: React.FC<SubClassDisplayProps> = ({
     <h3>{name}</h3>
     <h4>Spells: </h4>
     {spells ? (
-      <p>{spells.map((spell: any) => spell.spell.name).join(', ')}</p>
+      <SpellNameList
+        spells={spells.map(({ spell: { name } }) => name)}
+        keyPrefix={name}
+      />
     ) : (
       <None />
     )}
