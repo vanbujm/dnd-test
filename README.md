@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+# DnD Code test
+Hello nerds! This is my submission for the take home test.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+So I made some decisions when tackling this problem. For the record, I don't believe I took the most 
+pragmatic decisions either, things like I used both the graphql API and the rest API for fun.
+I also didn't use any design systems like Material UI or Bootstrap, mostly because they are super boring.
 
-## Available Scripts
+## Setup/Install
 
-In the project directory, you can run:
+Getting things installed
+- `yarn` or `npm i` (going to assume yarn from now on)
 
-### `yarn start`
+Running the tests
+- `yarn test`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Take a look at Storybook!
+- `yarn storybook`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Run the local server
+- `yarn start`
 
-### `yarn test`
+[View the real deal](https://dnd-test.vercel.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Known Issues
+So you can actually filter the spell lists by what spells are available at that level if you hit the
+`/spells/{spellName}` API endpoint. Cooler kids than me would have, but stitching together rest data is a 
+pain and its pretty expensive to hit the API for each spell (there are 319 spells...) without using a global 
+store or some such.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The class popup panels are supposed to never clip outside the screen. However, I did not have time to add a 
+window resize listener, so if you resize the window and make it smaller it will break.
