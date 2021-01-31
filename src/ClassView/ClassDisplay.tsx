@@ -69,6 +69,16 @@ const PinButton = styled.button<{ clicked: boolean }>`
   pointer-events: none;
 `;
 
+const HeadingContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 520px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
+
 const ClassInfoContainer = styled.div<{
   appearRight: boolean;
   clicked: boolean;
@@ -105,9 +115,7 @@ const ClassInfoContainer = styled.div<{
 `;
 
 const PositionedLevelInput = styled(Level)<{ appearRight: boolean }>`
-  position: absolute;
-  top: 1rem;
-  right: ${({ appearRight }) => (appearRight ? 1 : 6)}rem;
+  margin-right: 2rem;
 `;
 
 export const ClassDisplay: React.FC<ClassDisplayProps> = ({
@@ -156,13 +164,15 @@ export const ClassDisplay: React.FC<ClassDisplayProps> = ({
         ref={ref as any}
       >
         <form>
-          <h1>{name}</h1>
-          <PositionedLevelInput
-            appearRight={appearRight}
-            value={level}
-            setValue={setLevel}
-            dndClass={name}
-          />
+          <HeadingContainer>
+            <h1>{name}</h1>
+            <PositionedLevelInput
+              appearRight={appearRight}
+              value={level}
+              setValue={setLevel}
+              dndClass={name}
+            />
+          </HeadingContainer>
           <SpellDisplay
             spells={spells}
             spellList={spellList}
