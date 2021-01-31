@@ -7,6 +7,7 @@ import { LoadingSpinner } from './Icons';
 const ClassContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 const AppContainer = styled.div`
