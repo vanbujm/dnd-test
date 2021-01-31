@@ -3,9 +3,12 @@ import { useQuery } from '@apollo/client';
 import { CLASSES } from './queries';
 import { useState } from 'react';
 
+const classLevelCache: Record<string, any> = {};
+
 const getLevels = async (dndClass: string) => {
+  if (classLevelCache[dndClass]) return classLevelCache[dndClass];
   // Default options are marked with *
-  const response = await fetch(
+  const responsePromise = await fetch(
     `${API}/api/classes/${dndClass.toLocaleLowerCase()}/levels`,
     {
       method: 'GET',
@@ -15,12 +18,14 @@ const getLevels = async (dndClass: string) => {
       },
     }
   );
+  const response = await responsePromise;
+
   const results = await response.json();
-  return results.reduce(
+
+  classLevelCache[dndClass] = results.reduce(
     (
       acc: Record<string, Record<string, string>>,
-      { spellcasting }: Record<string, any>,
-      index: number
+      { spellcasting, level }: Record<string, any>
     ) => {
       if (!spellcasting) return acc;
       const { cantrips_known: cantrips, ...spells } = spellcasting;
@@ -34,7 +39,7 @@ const getLevels = async (dndClass: string) => {
         spellAcc[spellLevel] = val;
         return spellAcc;
       }, {});
-      acc[index + 1] = {
+      acc[level] = {
         cantrips: spellcasting['cantrips_known'],
         ...formattedSpellSlots,
       };
@@ -42,17 +47,21 @@ const getLevels = async (dndClass: string) => {
     },
     {}
   );
+  return classLevelCache[dndClass];
 };
+
+const spellCache: Record<string, any> = {};
 
 const getSpells = async (url: string) => {
   // Default options are marked with *
-  const response = await fetch(`${API}${url}`, {
+  const responsePromise = fetch(`${API}${url}`, {
     method: 'GET',
     mode: 'cors',
     headers: {
       'Content-Type': 'application/json',
     },
   });
+  const response = await responsePromise;
   const { results } = await response.json();
   return results.map(({ name }: Record<string, string>) => name);
 };
@@ -66,8 +75,19 @@ export const useDndData = () => {
   if (data && !formattedData) {
     const { classes, subclasses } = data;
     const classPromises = classes.map(
-      async ({ name, spells, subclasses: theSubclasses, ...rest }: any) => {
-        const formattedSpells = spells ? await getSpells(spells) : null;
+      async ({
+        name,
+        spells: spellUrl,
+        subclasses: theSubclasses,
+        ...rest
+      }: any) => {
+        let formattedSpells = null;
+        if (spellUrl) {
+          if (!spellCache[spellUrl]) {
+            spellCache[spellUrl] = getSpells(spellUrl);
+          }
+          formattedSpells = await spellCache[spellUrl];
+        }
         if (subclasses.length === 0) {
           return { name, spells: formattedSpells, ...rest };
         }
@@ -84,13 +104,20 @@ export const useDndData = () => {
         };
       }
     );
+
     Promise.all(classPromises).then((classData) => {
       setFormattedData(classData as any);
       setLoadingSpells(false);
       const getLevelPromises = (classData as any).map(
-        async ({ name }: { name: string }) => ({
-          [name]: await getLevels(name),
-        })
+        async ({ name }: { name: string }) => {
+          if (!classLevelCache[name]) {
+            classLevelCache[name] = getLevels(name);
+          }
+          const levels = await classLevelCache[name];
+          return {
+            [name]: levels,
+          };
+        }
       );
       Promise.all(getLevelPromises).then((allSpellLists) => {
         const combinedSpellLists = allSpellLists.reduce(
