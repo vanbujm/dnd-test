@@ -53,25 +53,29 @@ exports[`Storyshots ClassView/Class Cleric 1`] = `
     className="css-escu6n"
   >
     <form>
-      <h1>
-        Cleric
-      </h1>
       <div
-        className="css-jc17so"
+        className="css-1q7ywqt"
       >
-        <input
-          className="css-1npj8ef"
-          id="level-Cleric"
-          onChange={[Function]}
-          type="number"
-          value="1"
-        />
-        <label
-          className="css-189idq0"
-          htmlFor="level-Cleric"
+        <h1>
+          Cleric
+        </h1>
+        <div
+          className="css-s6gm0x"
         >
-          Level
-        </label>
+          <input
+            className="css-1npj8ef"
+            id="level-Cleric"
+            onChange={[Function]}
+            type="number"
+            value="1"
+          />
+          <label
+            className="css-189idq0"
+            htmlFor="level-Cleric"
+          >
+            Level
+          </label>
+        </div>
       </div>
       <h2>
         Spells:
@@ -760,25 +764,29 @@ exports[`Storyshots ClassView/Class Collection 1`] = `
       className="css-escu6n"
     >
       <form>
-        <h1>
-          Cleric
-        </h1>
         <div
-          className="css-jc17so"
+          className="css-1q7ywqt"
         >
-          <input
-            className="css-1npj8ef"
-            id="level-Cleric"
-            onChange={[Function]}
-            type="number"
-            value="1"
-          />
-          <label
-            className="css-189idq0"
-            htmlFor="level-Cleric"
+          <h1>
+            Cleric
+          </h1>
+          <div
+            className="css-s6gm0x"
           >
-            Level
-          </label>
+            <input
+              className="css-1npj8ef"
+              id="level-Cleric"
+              onChange={[Function]}
+              type="number"
+              value="1"
+            />
+            <label
+              className="css-189idq0"
+              htmlFor="level-Cleric"
+            >
+              Level
+            </label>
+          </div>
         </div>
         <h2>
           Spells:
@@ -1461,25 +1469,29 @@ exports[`Storyshots ClassView/Class Collection 1`] = `
       className="css-escu6n"
     >
       <form>
-        <h1>
-          Monk
-        </h1>
         <div
-          className="css-jc17so"
+          className="css-1q7ywqt"
         >
-          <input
-            className="css-1npj8ef"
-            id="level-Monk"
-            onChange={[Function]}
-            type="number"
-            value="1"
-          />
-          <label
-            className="css-189idq0"
-            htmlFor="level-Monk"
+          <h1>
+            Monk
+          </h1>
+          <div
+            className="css-s6gm0x"
           >
-            Level
-          </label>
+            <input
+              className="css-1npj8ef"
+              id="level-Monk"
+              onChange={[Function]}
+              type="number"
+              value="1"
+            />
+            <label
+              className="css-189idq0"
+              htmlFor="level-Monk"
+            >
+              Level
+            </label>
+          </div>
         </div>
         <h2>
           Spells:
@@ -1558,25 +1570,29 @@ exports[`Storyshots ClassView/Class Monk 1`] = `
     className="css-escu6n"
   >
     <form>
-      <h1>
-        Monk
-      </h1>
       <div
-        className="css-jc17so"
+        className="css-1q7ywqt"
       >
-        <input
-          className="css-1npj8ef"
-          id="level-Monk"
-          onChange={[Function]}
-          type="number"
-          value="1"
-        />
-        <label
-          className="css-189idq0"
-          htmlFor="level-Monk"
+        <h1>
+          Monk
+        </h1>
+        <div
+          className="css-s6gm0x"
         >
-          Level
-        </label>
+          <input
+            className="css-1npj8ef"
+            id="level-Monk"
+            onChange={[Function]}
+            type="number"
+            value="1"
+          />
+          <label
+            className="css-189idq0"
+            htmlFor="level-Monk"
+          >
+            Level
+          </label>
+        </div>
       </div>
       <h2>
         Spells:
